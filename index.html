@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시니어 원터치 9:16 쇼츠 메이커 (v115 참교육 TOP5 사이다 전개 에디션)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; }
+    </style>
+</head>
+<body id="mainBody" class="bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 min-h-screen text-slate-900 flex flex-col transition-colors duration-300">
+
+    <!-- 상단 헤더 -->
+    <header class="bg-gradient-to-r from-violet-700 via-indigo-700 to-blue-700 border-b-4 border-amber-400 py-5 px-4 sm:px-6 flex flex-wrap justify-between items-center gap-4 shadow-xl text-white">
+        <h1 class="text-lg sm:text-2xl font-black flex items-center gap-2 drop-shadow-md">
+            🎬 시니어 원터치 9:16 쇼츠 메이커 <span class="text-amber-300 text-sm bg-black/40 px-3 py-1 rounded-full font-black">한국인 전용 분산 에디션</span>
+        </h1>
+        
+        <!-- 상단 컨트롤 버튼 그룹 -->
+        <div class="flex flex-wrap items-center gap-2 text-sm font-bold">
+            <!-- 고대비 테마 전환 버튼 -->
+            <button onclick="toggleHighContrast()" id="btnThemeToggle" class="bg-amber-400 hover:bg-amber-500 text-slate-950 px-3.5 py-2.5 rounded-2xl transition shadow-lg font-black text-xs flex items-center gap-1 border-2 border-white">
+                ☀️ 고대비 모드
+            </button>
+
+            <!-- 초기화 버튼 -->
+            <button onclick="truePerfectReset()" class="bg-rose-600 hover:bg-rose-700 text-white px-4 py-2.5 rounded-2xl transition shadow-lg font-black text-xs flex items-center gap-1 border-2 border-white">
+                🗑️ 전체 초기화
+            </button>
+        </div>
+    </header>
+
+    <!-- 전체 사용 방법 (단계별) -->
+    <details open class="mx-3 sm:mx-5 mt-4 max-w-[1700px] xl:mx-auto w-auto xl:w-full bg-gradient-to-r from-amber-50 to-indigo-50 border-4 border-indigo-500 rounded-3xl shadow-xl card-box">
+        <summary class="cursor-pointer select-none p-4 sm:p-5 text-base sm:text-xl font-black text-indigo-950 flex items-center gap-2">📖 처음 쓰시는 분을 위한 사용 방법 (단계별) <span class="text-xs sm:text-sm bg-indigo-700 text-white px-3 py-1 rounded-full">눌러서 접기·펼치기</span></summary>
+        <div class="px-4 sm:px-5 pb-5 space-y-3">
+            <p class="text-sm sm:text-base font-black text-rose-900 bg-rose-100 border-2 border-rose-300 rounded-2xl p-3">🔑 한 줄 요약: <b>주제 고르기 → 7장 → 캐릭터 시트 확인 → [▶ 다음 복사]를 눌러 붙여넣기 → 장면 이어 붙이기 → 업로드 세트로 올리기</b></p>
+            <ol class="space-y-2.5">
+            <li class="flex gap-3 bg-white border-2 border-indigo-300 rounded-2xl p-3.5 shadow-sm">
+                <span class="shrink-0 w-9 h-9 rounded-full bg-indigo-700 text-white font-black flex items-center justify-center text-base shadow">1</span>
+                <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><div class="text-indigo-900 text-base sm:text-lg mb-0.5">주제 고르기</div>왼쪽(폰에서는 위쪽)의 탭에서 종류를 고릅니다: 드라마 · 참교육 · 일상 · 야담 · 민담 · 동화 · 설화 · <b>시니어(키오스크·스마트폰)</b>. 목록에서 마음에 드는 주제를 누르세요.<ul class="list-disc pl-5 mt-1.5 space-y-1 text-slate-800"><li>🔍 검색칸에 단어를 쓰면 주제가 걸러집니다.</li><li>🎲 <b>랜덤 주제</b>: 고민될 때 눌러 보세요.</li><li>☆ 별을 누르면 <b>즐겨찾기</b>에 담기고, 🕘 <b>최근</b>에서 방금 쓴 주제를 다시 열 수 있습니다.</li><li>내 이야기를 쓰고 싶다면 '나만의 주제' 칸에 문장을 쓰고 <b>[✨ 나만의 주제 적용하기]</b>를 누르세요.</li></ul></div>
+            </li>
+            <li class="flex gap-3 bg-white border-2 border-indigo-300 rounded-2xl p-3.5 shadow-sm">
+                <span class="shrink-0 w-9 h-9 rounded-full bg-indigo-700 text-white font-black flex items-center justify-center text-base shadow">2</span>
+                <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><div class="text-indigo-900 text-base sm:text-lg mb-0.5">몇 장으로 만들지 정하기</div>'씬 선택'에서 5·7·10·15·20·25·30장 중 고릅니다. <b>기본은 7장</b>이고, 이야기가 가장 자연스럽게 이어지는 길이입니다. 표지는 따로 한 장이 더 나옵니다(7장이면 총 8개 프롬프트).</div>
+            </li>
+            <li class="flex gap-3 bg-white border-2 border-indigo-300 rounded-2xl p-3.5 shadow-sm">
+                <span class="shrink-0 w-9 h-9 rounded-full bg-indigo-700 text-white font-black flex items-center justify-center text-base shadow">3</span>
+                <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><div class="text-indigo-900 text-base sm:text-lg mb-0.5">스토리 유형과 사이다 강도 정하기 (모든 탭)</div>모든 탭에서 '스토리 유형'과 '캐릭터 시트' 칸이 나타납니다. 제목의 분위기(복수·반전이면 통쾌한 결말, 따뜻한 분위기면 훈훈한 결말)에 맞는 이야기가 '자동'으로 정해집니다.<ul class="list-disc pl-5 mt-1.5 space-y-1 text-slate-800"><li><b>스토리 유형</b>: '자동'이면 주제마다 알맞은 전개(정체 공개 · 증거 한 방 · 공개 망신 · 규정 철퇴 · 인과응보)가 정해집니다. 원하면 5가지 중 하나로 고정할 수 있습니다.</li><li><b>사이다 강도</b>: 🍃순한맛(반성하고 훈훈하게) · 🥤기본 · 🌶️매운맛(모든 것을 잃고 홀로 남음).</li></ul></div>
+            </li>
+            <li class="flex gap-3 bg-white border-2 border-indigo-300 rounded-2xl p-3.5 shadow-sm">
+                <span class="shrink-0 w-9 h-9 rounded-full bg-indigo-700 text-white font-black flex items-center justify-center text-base shadow">4</span>
+                <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><div class="text-indigo-900 text-base sm:text-lg mb-0.5">등장인물(캐릭터 시트) 확인하기 ★가장 중요</div>같은 칸의 '캐릭터 시트'가 <b>모든 씬 프롬프트에 똑같이</b> 들어가서 인물이 바뀌지 않게 합니다. 주인공 · 상대 · 주변 인물 · 배경 5줄(영문)이 <b>주제에 맞게 자동으로</b> 채워집니다(장소·할머니/할아버지·상대 인물·핵심 반전). 맞지 않으면 직접 고치세요.<ul class="list-disc pl-5 mt-1.5 space-y-1 text-slate-800"><li>⚡ <b>빠른 선택</b> 버튼(할머니·할아버지·청년·중년 여성·중년 남성)으로 주인공을 한 번에 바꿀 수 있습니다. 나레이션 호칭도 같이 바뀝니다.</li><li>옷 색깔·머리 모양을 직접 고쳐 쓰면 더 또렷해집니다. 짧게 쓰세요(길면 900자를 넘습니다).</li><li>💾 마음에 드는 시트는 이름을 붙여 <b>저장</b>하고, 다음 영상에서 📂 <b>불러오기</b>로 같은 인물을 쓰세요.</li></ul></div>
+            </li>
+            <li class="flex gap-3 bg-white border-2 border-indigo-300 rounded-2xl p-3.5 shadow-sm">
+                <span class="shrink-0 w-9 h-9 rounded-full bg-indigo-700 text-white font-black flex items-center justify-center text-base shadow">5</span>
+                <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><div class="text-indigo-900 text-base sm:text-lg mb-0.5">캐릭터 기준 이미지 만들기 (인물을 가장 똑같게 유지하는 방법)</div>영상 AI는 씬마다 따로 그려서 글만으로는 얼굴이 조금씩 달라질 수 있습니다. 그래서 먼저 인물 그림을 한 장 만듭니다.<ul class="list-disc pl-5 mt-1.5 space-y-1 text-slate-800"><li>프롬프트 복사 줄의 <b>[🖼️ 캐릭터 기준 이미지 프롬프트]</b>를 눌러 복사 → 이미지 만들기 기능에 붙여 넣어 인물 사진을 만듭니다.</li><li>이후 각 씬을 만들 때 <b>그 이미지를 함께 첨부</b>하세요(프롬프트 창의 + 버튼).</li></ul></div>
+            </li>
+            <li class="flex gap-3 bg-white border-2 border-indigo-300 rounded-2xl p-3.5 shadow-sm">
+                <span class="shrink-0 w-9 h-9 rounded-full bg-indigo-700 text-white font-black flex items-center justify-center text-base shadow">6</span>
+                <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><div class="text-indigo-900 text-base sm:text-lg mb-0.5">프롬프트 복사하기</div>초록색 큰 버튼 <b>[▶ 다음 복사]</b>를 누를 때마다 <b>표지 → 1번 씬 → 2번 씬 …</b> 순서대로 하나씩 복사되고, 복사한 항목에는 ✅가 붙습니다.<ul class="list-disc pl-5 mt-1.5 space-y-1 text-slate-800"><li>각 버튼 옆의 '(612자)'는 글자 수입니다. <b>900자를 넘으면 ⚠️ 표시</b>가 뜨고, 그 경우 캐릭터 시트를 줄여 쓰세요.</li><li>특정 씬만 다시 필요하면 그 씬의 보라색 버튼을 누르세요.</li><li>처음부터 다시 하려면 [↺ 체크 초기화]를 누릅니다.</li></ul></div>
+            </li>
+            <li class="flex gap-3 bg-white border-2 border-indigo-300 rounded-2xl p-3.5 shadow-sm">
+                <span class="shrink-0 w-9 h-9 rounded-full bg-indigo-700 text-white font-black flex items-center justify-center text-base shadow">7</span>
+                <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><div class="text-indigo-900 text-base sm:text-lg mb-0.5">유튜브 크리에이트에서 동영상 만들기</div>① 유튜브 크리에이트의 <b>[동영상 생성]</b>을 엽니다. ② 복사한 프롬프트를 붙여 넣고(기준 이미지가 있으면 + 로 첨부) 생성합니다. ③ <b>표지부터 마지막 씬까지 순서대로</b> 한 장면씩 만듭니다. ④ 마음에 안 드는 장면만 다시 만들면 됩니다.</div>
+            </li>
+            <li class="flex gap-3 bg-white border-2 border-indigo-300 rounded-2xl p-3.5 shadow-sm">
+                <span class="shrink-0 w-9 h-9 rounded-full bg-indigo-700 text-white font-black flex items-center justify-center text-base shadow">8</span>
+                <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><div class="text-indigo-900 text-base sm:text-lg mb-0.5">나레이션(목소리) 넣기</div>방법은 두 가지입니다.<ul class="list-disc pl-5 mt-1.5 space-y-1 text-slate-800"><li><b>🎭 인물 대사(기본값)</b>: 영상 속 인물이 상황에 맞는 말을 직접 합니다(정중한 말투). <b>나레이터</b>: 해설 목소리만 나옵니다. <b>소리 없음</b>: 소리 지시를 뺍니다. [🎭 소리 방식] 버튼으로 바꾸고, 안 나오면 [🎙️ 말하기 지시 문구]를 1→2→3번으로 바꿔 보세요.</li><li><b>따로 입히기(확실한 방법)</b>: [🎭 소리 방식: 소리 없음]으로 바꾸고, <b>[🗣️ 나레이션 전체 복사]</b>로 대본을 복사해 편집 단계의 음성(텍스트 읽기) 기능에 넣으세요.</li></ul></div>
+            </li>
+            <li class="flex gap-3 bg-white border-2 border-indigo-300 rounded-2xl p-3.5 shadow-sm">
+                <span class="shrink-0 w-9 h-9 rounded-full bg-indigo-700 text-white font-black flex items-center justify-center text-base shadow">9</span>
+                <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><div class="text-indigo-900 text-base sm:text-lg mb-0.5">영상 이어 붙이고 음악 넣기</div>만든 장면들을 <b>번호 순서대로</b> 타임라인에 놓고 이어 붙입니다. 왼쪽의 'BGM 분위기'(스릴러 · 사이다 리듬 · 통기타 · 감성 발라드)를 고르면 그 분위기가 <b>각 씬 프롬프트의 음악 지시</b>로 들어갑니다. 영상 AI가 음악을 못 만들어 주면, 편집 화면에서 같은 분위기의 음악을 직접 고르세요.</div>
+            </li>
+            <li class="flex gap-3 bg-white border-2 border-indigo-300 rounded-2xl p-3.5 shadow-sm">
+                <span class="shrink-0 w-9 h-9 rounded-full bg-indigo-700 text-white font-black flex items-center justify-center text-base shadow">10</span>
+                <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><div class="text-indigo-900 text-base sm:text-lg mb-0.5">유튜브에 올리기</div>화면 맨 아래의 <b>[📺 유튜브 업로드 세트]</b>에서 제목 후보 3개 · 썸네일 문구 · 설명란 · 해시태그를 복사해 업로드 화면에 붙여 넣으세요. [전체 복사]로 한 번에 복사할 수도 있습니다. <b>폰에서 올리는 순서는 바로 아래 [📱 스마트폰에서 영상 올리는 방법]에 자세히 있습니다.</b></div>
+            </li>
+            </ol>
+            <div class="bg-amber-100 border-2 border-amber-400 rounded-2xl p-3.5 text-sm sm:text-base font-black text-slate-950 space-y-1.5">
+                <div class="text-amber-900 text-base sm:text-lg">🛠️ 이럴 땐 이렇게 하세요</div>
+                <p>• <b>장면마다 인물이 달라져요</b> → 4번에서 캐릭터 시트를 짧고 또렷하게 고치고, 5번 기준 이미지를 모든 씬에 첨부하세요.</p>
+                <p>• <b>"900자가 넘는다"고 나와요</b> → 버튼의 글자 수를 확인하고 캐릭터 시트의 영문을 줄이세요. 나레이션 '제외'로 바꾸면 더 짧아집니다.</p>
+                <p>• <b>목소리가 안 나와요 / 한숨 소리만 나요</b> → 먼저 <b>[🎙️ 음성 지시 방식]</b> 버튼을 눌러 1→2→3번으로 바꿔 다시 만들어 보세요. 그래도 안 되면 나레이션을 '제외'로 바꾸고 8번처럼 대본을 따로 입히세요.</p>
+                <p>• <b>1번·2번 장면에서 인물이 달라요</b> → ① 캐릭터 시트의 옷 색·머리 모양을 더 또렷하게 고치고 ② [🖼️ 캐릭터 기준 이미지 프롬프트]로 인물 사진을 먼저 만든 뒤 <b>모든 장면에 그 이미지를 첨부</b>하세요. ③ 어색한 장면만 다시 만들면 됩니다.</p>
+                <p>• <b>이야기가 어색하게 끊겨요</b> → 5장보다 <b>7장 이상</b>으로 만드세요. 5장은 중간 장면 하나가 빠집니다.</p>
+                <p>• <b>저장한 캐릭터가 사라졌어요</b> → 저장은 지금 쓰는 브라우저 안에만 남습니다. 다른 기기나 시크릿 창에서는 보이지 않습니다.</p>
+            </div>
+        </div>
+    </details>
+
+    <!-- 영상 올리는 방법 (단계별) -->
+    <details open class="mx-3 sm:mx-5 mt-3 max-w-[1700px] xl:mx-auto w-auto xl:w-full bg-gradient-to-r from-emerald-50 to-teal-50 border-4 border-emerald-500 rounded-3xl shadow-xl card-box">
+        <summary class="cursor-pointer select-none p-4 sm:p-5 text-base sm:text-xl font-black text-emerald-950 flex items-center gap-2 flex-wrap">📱 스마트폰에서 영상 올리는 방법 (크리에이트 → 유튜브) <span class="text-xs sm:text-sm bg-emerald-700 text-white px-3 py-1 rounded-full">눌러서 접기·펼치기</span></summary>
+        <div class="px-4 sm:px-5 pb-5 space-y-5">
+            <p class="text-sm sm:text-base font-black text-slate-900 bg-amber-100 border-2 border-amber-400 rounded-2xl p-3">ℹ️ 이 쇼츠 생성기는 영상을 만들 <b>프롬프트</b>와 <b>업로드용 글(제목·설명·해시태그)</b>을 만들어 주는 도구라서, 영상 파일을 이 화면에 올리는 기능은 없습니다. <b>전체 흐름: ① 장면 영상들을 크리에이트에서 한 편으로 합치기 → ② 유튜브에 올리기 → ③ 올라갔는지 확인</b></p>
+
+            <div class="space-y-2">
+                <div class="text-base sm:text-lg font-black text-emerald-900">✅ 시작 전 준비 (체크해 보세요)</div>
+                <div class="grid gap-2 sm:grid-cols-2"><label class="flex items-start gap-2 bg-white border-2 border-emerald-300 rounded-2xl p-3 text-sm sm:text-base font-black text-slate-950"><input type="checkbox" class="mt-1 w-5 h-5 shrink-0 accent-emerald-700"><span>장면 영상을 <b>모두 만들어 폰에 저장</b>했다 (표지 + 1번~마지막 씬)</span></label><label class="flex items-start gap-2 bg-white border-2 border-emerald-300 rounded-2xl p-3 text-sm sm:text-base font-black text-slate-950"><input type="checkbox" class="mt-1 w-5 h-5 shrink-0 accent-emerald-700"><span><b>세로 9:16</b> 영상이다</span></label><label class="flex items-start gap-2 bg-white border-2 border-emerald-300 rounded-2xl p-3 text-sm sm:text-base font-black text-slate-950"><input type="checkbox" class="mt-1 w-5 h-5 shrink-0 accent-emerald-700"><span>합친 뒤 길이가 <b>3분 이하</b>가 될 것이다</span></label><label class="flex items-start gap-2 bg-white border-2 border-emerald-300 rounded-2xl p-3 text-sm sm:text-base font-black text-slate-950"><input type="checkbox" class="mt-1 w-5 h-5 shrink-0 accent-emerald-700"><span>화면 맨 아래 <b>📺 업로드 세트</b>의 제목·설명·해시태그를 <b>복사해 둘 준비</b>가 되었다</span></label><label class="flex items-start gap-2 bg-white border-2 border-emerald-300 rounded-2xl p-3 text-sm sm:text-base font-black text-slate-950"><input type="checkbox" class="mt-1 w-5 h-5 shrink-0 accent-emerald-700"><span><b>와이파이</b>에 연결돼 있고, 폰 <b>저장 공간</b>이 넉넉하다</span></label><label class="flex items-start gap-2 bg-white border-2 border-emerald-300 rounded-2xl p-3 text-sm sm:text-base font-black text-slate-950"><input type="checkbox" class="mt-1 w-5 h-5 shrink-0 accent-emerald-700"><span>폰 <b>배터리</b>가 충분하다 (업로드 중 꺼지면 처음부터 다시)</span></label></div>
+            </div>
+
+            <div class="space-y-2">
+                <div class="text-base sm:text-lg font-black text-emerald-900">① 장면 영상 한 편으로 합치기 (유튜브 크리에이트)</div>
+                <ol class="space-y-2">
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">1</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>유튜브 크리에이트</b> 앱을 열고 로그인합니다.</div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">2</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed">홈 화면의 <b>➕ 버튼</b>을 눌러 <b>새 프로젝트</b>를 시작합니다.</div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">3</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>갤러리</b>에서 만든 장면 영상을 <b>표지 → 1번 → 2번 … 마지막 씬 순서</b>로 차례로 눌러 고른 뒤 <b>[가져오기]</b>를 누릅니다.<div class="mt-1 text-slate-700 font-bold">다른 앱 폴더(다운로드 등)에 있는 영상은 화면 위 '갤러리' 옆 화살표를 눌러 그 폴더에서 가져오세요.</div></div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">4</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed">아래 <b>타임라인</b>에서 장면 순서가 맞는지 재생해 확인합니다.<div class="mt-1 text-slate-700 font-bold">순서가 틀렸거나 빠진 장면이 있으면 바로잡고, 어색하게 길거나 이상한 끝부분은 클립을 눌러 양끝의 흰 손잡이를 끌어 잘라 냅니다.</div></div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">5</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>나레이션</b>을 확인합니다.<div class="mt-1 text-slate-700 font-bold">프롬프트에 목소리를 넣어 만들었다면 그대로 두고, 따로 입히기로 했다면 이 앱의 [🗣️ 나레이션 전체 복사] 대본으로 편집 메뉴의 음성(텍스트 읽기) 기능을 쓰세요. <b>자막</b>은 영상 AI가 넣어 준 글자가 틀렸거나 안 나왔다면 [💬 자막 넣기: 끔]으로 바꾸고, 편집 메뉴의 <b>자동 캡션(자막)</b>(지원 언어는 앱에서 확인)을 쓰거나 [📝 자막 파일(SRT) 복사]를 쓰세요.</div></div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">6</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>음악</b>을 고릅니다 (이 앱에서 고른 BGM 분위기와 어울리는 곡).<div class="mt-1 text-slate-700 font-bold">영상 AI가 이미 음악을 넣어 주었다면 또 넣지 마세요. 소리가 겹칩니다.</div></div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">7</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed">전체 길이가 <b>3분 이하</b>이고 <b>세로 화면</b>인지 마지막으로 확인합니다.</div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">8</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed">오른쪽 위의 <b>내보내기(또는 업로드)</b> 버튼을 누릅니다.<div class="mt-1 text-slate-700 font-bold">두 가지 방법이 있습니다. <b>① 크리에이트에서 바로 유튜브로 업로드</b> / <b>② 폰에 저장(내보내기)한 뒤 유튜브 앱에서 올리기</b>. 버튼 이름은 앱 버전에 따라 조금 다를 수 있습니다.</div></div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">9</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>꼭 알아두세요:</b> 15초가 넘는 영상을 <b>저작권 있는 음악이 들어간 채로 폰에 저장</b>하면 그 음악이 <b>자동으로 빠집니다.</b><div class="mt-1 text-slate-700 font-bold">크리에이트 라이브러리의 음악을 쓰고 싶다면 폰에 저장하지 말고 <b>①번 바로 업로드</b>로 올리세요. 이미 영상 AI가 만든 음악·목소리가 들어 있다면 해당되지 않습니다.</div></div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">10</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>내보내기가 실패하면</b> 화질을 <b>1080p → 720p</b>로 낮추고, 겹쳐 놓은 영상 층·스티커·효과·전환을 지운 뒤 다시 해 보세요.<div class="mt-1 text-slate-700 font-bold">폰 성능에 따라 복잡한 편집은 실패할 수 있습니다.</div></div>
+                </li>
+                </ol>
+            </div>
+
+            <div class="space-y-2">
+                <div class="text-base sm:text-lg font-black text-emerald-900">② 유튜브 앱에서 올리기 <span class="text-xs sm:text-sm font-bold text-slate-700">(크리에이트에서 바로 업로드했다면 비슷한 설정 화면이 이어서 나옵니다)</span></div>
+                <ol class="space-y-2">
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">1</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed">완성한 영상이 폰 <b>갤러리(앨범)</b>에 저장돼 있는지 확인합니다.<div class="mt-1 text-slate-700 font-bold">(위 ②번 방법으로 저장했거나, 이미 한 편짜리 영상을 갖고 있을 때 쓰는 단계입니다.)</div></div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">2</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>유튜브 앱</b>을 열고 화면 아래 가운데의 <b>➕ 버튼</b>을 누릅니다.<div class="mt-1 text-slate-700 font-bold">나오는 메뉴에서 <b>'쇼츠 동영상 만들기'</b>(또는 '동영상 업로드')를 고릅니다.</div></div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">3</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed">카메라 화면 <b>왼쪽 아래의 갤러리(업로드) 아이콘</b>을 눌러 완성한 영상을 선택합니다.</div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">4</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed">길이가 <b>3분을 넘으면</b> 타임라인에서 끝을 잘라 3분 이하로 맞춥니다.</div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">5</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed">이미 나레이션과 음악을 넣어 두었다면 <b>사운드·문자·필터는 건드리지 않고</b> 오른쪽 위 <b>[다음]</b>을 누릅니다.<div class="mt-1 text-slate-700 font-bold">이 화면에서 음악을 또 고르면 목소리와 겹칠 수 있습니다.</div></div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">6</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>제목(설명) 칸</b>에 이 앱에서 복사한 <b>제목 후보</b>를 붙여 넣습니다.<div class="mt-1 text-slate-700 font-bold"><b>붙여넣는 방법:</b> 이 앱 화면에서 [복사] 버튼 → 유튜브 앱으로 전환 → 입력칸을 <b>길게 눌러 [붙여넣기]</b>. 설명이나 해시태그 칸이 보이면 '업로드 세트'의 설명란·해시태그도 같은 방법으로 넣으세요(#shorts 포함).</div></div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">7</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed">왼쪽 위의 <b>연필 모양</b>을 눌러 <b>썸네일 장면</b>을 고릅니다.<div class="mt-1 text-slate-700 font-bold">인물과 상황이 한눈에 보이는 장면이 좋습니다. 고른 뒤 확인을 누르세요.</div></div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">8</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>시청자층</b>에서 <b>'아니요, 아동용이 아닙니다'</b>를 선택합니다.</div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">9</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>공개 범위</b>를 고릅니다: 공개 · 일부 공개 · 비공개. 원하는 시각에 올리려면 <b>예약</b>을 쓰세요.<div class="mt-1 text-slate-700 font-bold">처음에는 '비공개'로 올려 재생을 확인한 뒤 공개로 바꾸는 방법도 안전합니다.</div></div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">10</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>프로모션 라벨(유료 광고)</b>은 광고가 아니라면 <b>'아니요'</b>로 둡니다.</div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">11</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>'변경되었거나 합성된 콘텐츠'</b> 같은 AI 관련 질문이 나오면 사실대로 답합니다.<div class="mt-1 text-slate-700 font-bold">실제 사람처럼 보이는 AI 영상이라면 '예'로 표시하는 것이 안전합니다. 메뉴 이름은 버전에 따라 다를 수 있습니다.</div></div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">12</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed">오른쪽 위 <b>[쇼츠 동영상 업로드]</b>를 누르고, 처리가 끝날 때까지 <b>앱을 닫지 말고</b> 기다립니다.</div>
+                </li>
+                </ol>
+            </div>
+
+            <div class="space-y-2">
+                <div class="text-base sm:text-lg font-black text-emerald-900">③ 올린 뒤 확인하기</div>
+                <ol class="space-y-2">
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">1</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed">유튜브 앱 → 오른쪽 아래 <b>[내 프로필(나)]</b> → <b>내 채널</b>로 들어가 <b>쇼츠</b> 탭에 영상이 올라왔는지 확인합니다.<div class="mt-1 text-slate-700 font-bold">처리 중이면 잠시 걸립니다. 처음에는 화질이 낮게 보이다가 처리가 끝나면 좋아집니다.</div></div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">2</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed">영상을 눌러 <b>처음부터 끝까지 재생</b>해 목소리·음악·장면 순서를 확인합니다.</div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-emerald-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center text-sm shadow">3</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed">'비공개'로 올렸다면 영상 <b>편집(연필)</b>에서 <b>공개 범위를 '공개'</b>로 바꿉니다.<div class="mt-1 text-slate-700 font-bold">메뉴 위치는 버전에 따라 조금 다를 수 있습니다.</div></div>
+                </li>
+                </ol>
+            </div>
+
+            <div class="bg-white border-2 border-emerald-300 rounded-2xl p-3.5 text-sm sm:text-base font-black text-slate-950 space-y-1.5">
+                <div class="text-emerald-900 text-base sm:text-lg">🛠️ 폰에서 올릴 때 문제가 생기면</div>
+                <p>• <b>쇼츠가 아니라 일반 동영상으로 올라가요</b> → 세로(9:16)이고 3분 이하인지 확인하세요.</p>
+                <p>• <b>음악이 사라졌어요</b> → 위 ① 9번을 보세요. 폰에 저장하면 저작권 음악이 빠질 수 있습니다.</p>
+                <p>• <b>내보내기가 계속 실패해요</b> → 화질을 720p로 낮추고, 스티커·효과·전환을 지우세요.</p>
+                <p>• <b>업로드가 멈추거나 오래 걸려요</b> → 와이파이를 확인하고, 업로드 중에는 앱을 닫거나 화면을 끄지 마세요.</p>
+                <p>• <b>붙여넣기가 안 돼요</b> → 이 앱의 [복사] 버튼을 다시 누른 뒤 유튜브 입력칸을 길게 눌러 [붙여넣기]를 고르세요.</p>
+                <p>• <b>메뉴 이름이 달라요</b> → 앱이 업데이트되면 이름이 바뀔 수 있습니다. 순서(영상 선택 → 제목·설명 → 시청자층 → 공개 설정 → 업로드)는 같습니다.</p>
+            </div>
+
+            <details class="bg-white border-2 border-slate-300 rounded-2xl p-3">
+                <summary class="cursor-pointer font-black text-sm sm:text-base text-slate-800">💻 (참고) 컴퓨터로 올릴 때</summary>
+                <ol class="space-y-2 mt-3">
+                <li class="flex gap-3 bg-white border-2 border-slate-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-slate-700 text-white font-black flex items-center justify-center text-sm shadow">1</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed">컴퓨터에서 <b>studio.youtube.com</b>에 로그인 → 오른쪽 위 <b>[만들기]</b> → <b>[동영상 업로드]</b>를 누릅니다.</div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-slate-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-slate-700 text-white font-black flex items-center justify-center text-sm shadow">2</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>[파일 선택]</b>으로 영상을 고르면, 세로(9:16)·3분 이하일 때 자동으로 쇼츠로 분류됩니다.</div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-slate-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-slate-700 text-white font-black flex items-center justify-center text-sm shadow">3</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>제목·설명</b>에 이 앱의 업로드 세트를 붙여 넣고, 시청자층은 <b>'아니요, 아동용이 아닙니다'</b>를 선택합니다.</div>
+                </li>
+                <li class="flex gap-3 bg-white border-2 border-slate-300 rounded-2xl p-3 shadow-sm">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-slate-700 text-white font-black flex items-center justify-center text-sm shadow">4</span>
+                    <div class="text-sm sm:text-base font-black text-slate-950 leading-relaxed"><b>[다음]</b>으로 동영상 요소 → 점검(저작권 확인)을 지나 <b>공개 설정</b>을 고르고 <b>[저장/게시]</b>를 누릅니다.</div>
+                </li>
+                </ol>
+            </details>
+        </div>
+    </details>
+
+    <!-- 메인 레이아웃 -->
+    <div class="flex-grow flex flex-col lg:flex-row p-3 sm:p-5 gap-5 max-w-[1700px] mx-auto w-full">
+        
+        <!-- 좌측 사이드바: 주제 선택 및 BGM 설정 -->
+        <aside class="w-full lg:w-[440px] flex flex-col gap-4 flex-shrink-0">
+            
+            <!-- [1단계] 주제 선택 박스 -->
+            <div class="bg-white border-4 border-violet-500 rounded-3xl p-5 sm:p-6 shadow-xl card-box">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="bg-violet-700 text-white text-xs font-black px-3 py-1.5 rounded-full shadow">1단계</span>
+                    <h2 class="text-base font-black text-violet-950">영상 주제 선택 또는 직접 입력</h2>
+                </div>
+                <textarea id="customTopicInput" rows="2" placeholder="(예: 며느리를 무시하던 시어머니의 통쾌한 최후 등)" class="w-full p-3.5 bg-violet-50 border-3 border-violet-400 rounded-2xl text-sm font-black text-slate-950 placeholder-slate-500 focus:ring-4 focus:ring-violet-400 focus:outline-none resize-none mb-3 shadow-inner"></textarea>
+                <button onclick="generateCustomStory()" class="w-full bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white text-base font-black py-3.5 px-4 rounded-2xl transition shadow-lg flex items-center justify-center gap-2 border-2 border-emerald-300">
+                    ✨ 나만의 주제 적용하기
+                </button>
+            </div>
+
+            <!-- [2단계] BGM 분위기 선택 박스 -->
+            <div class="bg-white border-4 border-pink-500 rounded-3xl p-5 sm:p-6 shadow-xl card-box">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="bg-pink-700 text-white text-xs font-black px-3 py-1.5 rounded-full shadow">2단계</span>
+                    <h3 class="text-sm font-black text-pink-950">배경음악(BGM) 분위기 고르기</h3>
+                </div>
+                <div class="grid grid-cols-2 gap-2.5 text-xs font-black">
+                    <button onclick="setBgm('긴장감 넘치는 스릴러풍')" id="bgm-1" class="p-3 rounded-2xl bg-pink-700 text-white transition text-center shadow-md border-2 border-pink-300">🚨 긴장감 스릴러</button>
+                    <button onclick="setBgm('통쾌한 사이다 리듬')" id="bgm-2" class="p-3 rounded-2xl bg-pink-100 hover:bg-pink-200 text-pink-950 border-2 border-pink-300 transition text-center shadow-sm">⚡ 통쾌한 사이다</button>
+                    <button onclick="setBgm('구슬픈 통기타 선율')" id="bgm-3" class="p-3 rounded-2xl bg-pink-100 hover:bg-pink-200 text-pink-950 border-2 border-pink-300 transition text-center shadow-sm">🎸 통기타 선율</button>
+                    <button onclick="setBgm('따스한 감성 발라드')" id="bgm-4" class="p-3 rounded-2xl bg-pink-100 hover:bg-pink-200 text-pink-950 border-2 border-pink-300 transition text-center shadow-sm">🎹 감성 발라드</button>
+                </div>
+            </div>
+
+            <!-- 주제 검색 및 카테고리 탭 -->
+            <div class="bg-white border-4 border-amber-500 rounded-3xl p-5 sm:p-6 shadow-xl flex flex-col flex-grow card-box">
+                <input type="text" id="searchInput" oninput="filterTopics()" placeholder="🔍 1,400선 전체 주제 검색" class="w-full p-3.5 bg-amber-50 border-3 border-amber-400 rounded-2xl text-sm font-black text-slate-950 placeholder-slate-500 mb-3 focus:outline-none focus:ring-4 focus:ring-amber-300 shadow-inner">
+                
+                <!-- 카테고리 탭 (7개 항목) -->
+                <div class="grid grid-cols-4 gap-1.5 mb-2 text-[11px] font-black">
+                    <button onclick="switchCategory('drama')" id="cat-drama" class="py-2 px-0.5 rounded-xl bg-rose-700 text-white transition shadow-md text-center border border-rose-400">드라마(200)</button>
+                    <button onclick="switchCategory('cheolguk')" id="cat-cheolguk" class="py-2 px-0.5 rounded-xl bg-amber-700 text-white transition shadow-md text-center border border-amber-400">참교육(200)</button>
+                    <button onclick="switchCategory('daily')" id="cat-daily" class="py-2 px-0.5 rounded-xl bg-blue-700 text-white transition shadow-md text-center border border-blue-400">감성(200)</button>
+                    <button onclick="switchCategory('yadam')" id="cat-yadam" class="py-2 px-0.5 rounded-xl bg-emerald-700 text-white transition shadow-md text-center border border-emerald-400">야담(200)</button>
+                </div>
+                <div class="grid grid-cols-4 gap-1.5 mb-3 text-[11px] font-black">
+                    <button onclick="switchCategory('mindam')" id="cat-mindam" class="py-2 px-0.5 rounded-xl bg-purple-700 text-white transition shadow-md text-center border border-purple-400">민담(200)</button>
+                    <button onclick="switchCategory('fairytale')" id="cat-fairytale" class="py-2 px-0.5 rounded-xl bg-pink-700 text-white transition shadow-md text-center border border-pink-400">동화(200)</button>
+                    <button onclick="switchCategory('seolhwa')" id="cat-seolhwa" class="py-2 px-0.5 rounded-xl bg-indigo-700 text-white transition shadow-md text-center border border-indigo-400">설화(200)</button>
+                    <button onclick="switchCategory('senior')" id="cat-senior" class="py-2 px-0.5 rounded-xl bg-teal-700 text-white transition shadow-md text-center border border-teal-400">시니어(200)</button>
+                </div>
+
+                <div class="flex justify-between items-center mb-2 px-1">
+                    <span id="categoryTitleLabel" class="text-sm font-black text-indigo-950">쇼츠 인기 드라마 200선</span>
+                    <span id="totalCountLabel" class="text-xs bg-amber-200 text-amber-950 px-3 py-1 rounded-full font-black shadow-sm">총 200선</span>
+                </div>
+
+                <div class="flex flex-wrap gap-1.5 mb-2 text-[11px] font-black">
+                    <button onclick="randomTopic()" class="px-3 py-2 rounded-xl bg-violet-700 text-white shadow-md border border-violet-400">🎲 랜덤 주제</button>
+                    <button id="lm-cat" onclick="setListMode('cat')" class="px-3 py-2 rounded-xl">📚 전체</button>
+                    <button id="lm-fav" onclick="setListMode('fav')" class="px-3 py-2 rounded-xl">★ 즐겨찾기</button>
+                    <button id="lm-recent" onclick="setListMode('recent')" class="px-3 py-2 rounded-xl">🕘 최근</button>
+                </div>
+                <!-- 주제 리스트 컨테이너 -->
+                <div id="topicListContainer" class="bg-slate-50 border-3 border-slate-300 rounded-2xl p-2.5 space-y-2.5 overflow-y-auto max-h-[220px] sm:max-h-[300px] text-sm font-black shadow-inner"></div>
+            </div>
+        </aside>
+
+        <!-- 우측 메인 콘텐츠 영역 -->
+        <main class="flex-grow bg-white border-4 border-indigo-500 rounded-3xl p-5 sm:p-7 shadow-xl flex flex-col gap-6 card-box">
+            
+            <!-- 타이틀 및 상태바 -->
+            <div class="border-b-2 border-indigo-200 pb-4">
+                <span id="activeCategoryBadge" class="text-xs font-black bg-indigo-200 text-indigo-950 px-3.5 py-1.5 rounded-full shadow-sm">쇼츠 인기 드라마 200선</span>
+                <h2 id="activeTitle" class="text-xl sm:text-3xl font-black text-indigo-950 mt-3 drop-shadow-sm">주제를 선택하거나 직접 입력해 주세요</h2>
+                <div class="flex flex-wrap items-center gap-4 mt-3 text-sm font-black text-slate-900">
+                    <span id="summaryInfo" class="bg-amber-100 border-2 border-amber-400 text-amber-950 px-4 py-1.5 rounded-2xl shadow-sm font-black">🎞️ 9:16 세로형 쇼츠 (한국인 배우 고정 & 고유 나레이션 분산형)</span>
+                </div>
+            </div>
+
+            <!-- 안내 패널 -->
+            <div class="bg-gradient-to-r from-indigo-950 via-purple-950 to-pink-950 border-4 border-amber-400 p-5 rounded-3xl text-white space-y-3 shadow-2xl">
+                <p class="font-black text-amber-300 text-base sm:text-lg flex items-center gap-2">👵👴 [한국인 전용 완벽 가이드] 각 씬마다 고유한 한국어 대사가 생성되며 외국인 등장이 원천 차단됩니다!</p>
+                <div class="text-xs sm:text-sm text-white leading-relaxed font-black space-y-1">
+                    <p>✨ <b>한국인 100% 고정</b>: 프롬프트에 한국인 배우(Korean actor/actress)가 명시됩니다.</p>
+                    <p>✨ <b>나레이션 중복 방지</b>: 씬 개수에 상관없이 도입부터 결말까지 대사가 모두 다르게 분산됩니다.</p>
+                </div>
+            </div>
+
+            <!-- [씬 선택 버튼 패널 (5 ~ 30장)] -->
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-3 border-indigo-400 p-4.5 rounded-3xl shadow-md flex flex-wrap items-center gap-3">
+                <div class="flex items-center gap-2 w-full mb-1">
+                    <span class="bg-blue-700 text-white text-xs font-black px-3 py-1 rounded-full shadow">씬 선택</span>
+                    <span class="text-xs sm:text-sm font-black text-blue-950">원하시는 씬 개수를 선택하세요 (5장 ~ 30장):</span>
+                </div>
+                <div class="flex flex-wrap gap-2.5" id="sceneCountButtonsContainer"></div>
+            </div>
+
+            <!-- [참교육 전용: 인기 스토리 유형 TOP5] -->
+            <div id="cheolgukTypePanel" class="hidden bg-gradient-to-r from-amber-50 to-rose-50 border-3 border-amber-500 p-4 rounded-3xl shadow-md">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="bg-amber-700 text-white text-xs font-black px-3 py-1 rounded-full shadow">스토리 유형</span>
+                    <span class="text-xs sm:text-sm font-black text-amber-950">참교육 인기 전개 TOP5 (반전 + 사이다) 선택:</span>
+                </div>
+                <div class="flex flex-wrap gap-2" id="cheolgukTypeButtons"></div>
+                <div class="mt-3 space-y-1.5 text-xs font-black text-amber-950">
+                    <p>🧑‍🤝‍🧑 [캐릭터 시트] 모든 씬 프롬프트에 똑같이 들어가 인물이 바뀌지 않게 합니다 (수정 가능, 영문):</p>
+                    <input id="castP" oninput="updateInterface()" class="w-full p-2 border-2 border-amber-400 rounded-xl bg-white text-slate-950" placeholder="주인공">
+                    <input id="castA" oninput="updateInterface()" class="w-full p-2 border-2 border-amber-400 rounded-xl bg-white text-slate-950" placeholder="상대(진상)">
+                    <input id="castS" oninput="updateInterface()" class="w-full p-2 border-2 border-amber-400 rounded-xl bg-white text-slate-950" placeholder="주변 인물">
+                    <input id="castSet" oninput="updateInterface()" class="w-full p-2 border-2 border-amber-400 rounded-xl bg-white text-slate-950" placeholder="배경(장소)">
+                    <input id="castT" oninput="updateInterface()" class="w-full p-2 border-2 border-rose-400 rounded-xl bg-white text-slate-950" placeholder="핵심 반전(영문, 예: the store owner) — 반전 장면에 들어갑니다">
+                    <p>⚡ 주인공 빠른 선택:</p>
+                    <div id="castQuick" class="flex flex-wrap gap-1.5"></div>
+                    <div class="flex flex-wrap gap-1.5 items-center">
+                        <input id="castSaveName" class="flex-1 min-w-[120px] p-2 border-2 border-amber-400 rounded-xl bg-white text-slate-950" placeholder="저장 이름 (예: 우리 할머니)">
+                        <button onclick="saveCast()" class="px-3 py-2 rounded-xl bg-amber-700 text-white font-black">💾 저장</button>
+                        <select id="castSavedSelect" class="p-2 border-2 border-amber-400 rounded-xl bg-white text-slate-950"></select>
+                        <button onclick="loadCast()" class="px-3 py-2 rounded-xl bg-amber-500 text-slate-950 font-black">📂 불러오기</button>
+                        <button onclick="deleteCast()" class="px-3 py-2 rounded-xl bg-slate-200 text-slate-900 font-black">🗑️</button>
+                    </div>
+                    <p>🥤 사이다 강도 (결말의 세기):</p>
+                    <div id="sodaButtons" class="flex flex-wrap gap-1.5"></div>
+                </div>
+            </div>
+
+            <!-- [세로형 원터치 복사 바] -->
+            <div class="bg-slate-50 border-3 border-slate-300 p-5 sm:p-6 rounded-3xl shadow-lg flex flex-col gap-3.5" id="sequentialButtonsContainer">
+                <span class="text-xs sm:text-sm font-black text-indigo-950 w-full mb-1">🔥 [원터치 프롬프트 복사] 아래 표지 및 씬별 버튼을 누르면 고유 서사 프롬프트가 복사됩니다:</span>
+            </div>
+
+            <div id="uploadSetContainer"></div>
+            <!-- 씬 상세 미리보기 영역 -->
+            <div id="sceneDetailsContainer" class="space-y-6">
+                <div class="border-3 border-dashed border-indigo-300 bg-indigo-50/50 rounded-3xl p-10 text-center text-indigo-900 font-black text-base shadow-inner">
+                    📌 위 가이드 순서대로 왼쪽에서 주제를 선택하고 [나만의 주제 적용하기]를 누르면 각 씬별 고유 버튼들이 나타납니다.
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="text-center py-6 text-sm font-black text-slate-900 border-t-3 border-slate-300 mt-auto bg-white flex flex-wrap justify-center items-center gap-4 shadow-inner">
+        <span class="font-black text-indigo-950">© 시니어 원터치 쇼츠 메이커 v114 한국인 전용 완벽 분산 에디션. All rights reserved.</span>
+        <button onclick="truePerfectReset()" class="text-xs font-black text-rose-800 bg-rose-100 border-2 border-rose-400 py-2 px-4 rounded-xl shadow hover:bg-rose-200 transition">
+            🗑️ 전체 초기화
+        </button>
+    </footer>
+
+    <!-- 자바스크립트 로직 -->
+    <script>
+        let currentScenesCount = 7;
+        let currentCategory = 'drama';
+        let currentTopicTitle = '';
+        let currentBgm = '긴장감 넘치는 스릴러풍';
+        let isHighContrast = false;
+
+        const colorfulBgPalettes = [
+            "bg-amber-100 border-amber-500 text-amber-950 hover:bg-amber-200 font-black",
+            "bg-sky-100 border-sky-500 text-sky-950 hover:bg-sky-200 font-black",
+            "bg-emerald-100 border-emerald-500 text-emerald-950 hover:bg-emerald-200 font-black",
+            "bg-violet-100 border-violet-500 text-violet-950 hover:bg-violet-200 font-black",
+            "bg-rose-100 border-rose-500 text-rose-950 hover:bg-rose-200 font-black"
+        ];
+
+        // 씬 번호와 전체 씬 개수에 따라 중복 없이 순차적으로 진행되는 서사 생성 함수
+        function getUniqueDistributedStep(catKey, index, total, topic) {
+            let character = "A Korean protagonist";
+            let action = "";
+            let narration = "";
+            if (isStoryCat()) {
+                let r = getCheolgukStory(index, total, topic);
+                if (false) {
+                    const soft = [[/shouting and belittling/g, "glancing impatiently and looking down on"], [/scolding and belittling/g, "glaring impatiently at"], [/shouting/g, "glancing"], [/yelling/g, "glaring"], [/mocking/g, "rolling eyes at"], [/making insulting remarks/g, "showing a disrespectful look"], [/scolding/g, "glaring"], [/belittling/g, "looking down on"], [/denying everything and pointing at/g, "shaking his head and gesturing impatiently at"]];
+                    soft.forEach(x => { r.action = r.action.replace(x[0], x[1]); });
+                }
+                r = applySoda(r, index, total);
+                r = roleify(r);
+                r = topicify(r, index, total, topic);
+                r = angerify(r, index, total, topic);
+                return r;
+            }
+
+            if (catKey === 'drama' || catKey === 'cheolguk') {
+                const pool = [
+                    {
+                        char: "A confident middle-aged Korean protagonist in modern Seoul background",
+                        act: "observing an unfair and arrogant situation with calm, sharp eyes",
+                        nar: `모두가 잠잠하던 그곳에서, "${topic}"에 관한 충격적인 사건의 서막이 오릅니다.`
+                    },
+                    {
+                        char: "An arrogant Korean antagonist showing off wealth and status",
+                        act: "laughing mockingly and treating people around with extreme disrespect",
+                        nar: "상대방은 자신의 권력과 재력을 믿고 주변 사람들을 무참히 짓밟기 시작합니다."
+                    },
+                    {
+                        char: "A determined Korean protagonist with steady gaze",
+                        act: "gathering hidden evidence and listening silently to the unfair accusations",
+                        nar: "주변의 비웃음 속에서도 주인공은 조용히 반격을 위한 마지막 카드를 준비합니다."
+                    },
+                    {
+                        char: "A tense Korean workplace or living room setting",
+                        act: "confronting the antagonist face to face with an unyielding expression",
+                        nar: "더 이상 참지 않고 정면으로 맞서자, 상대방의 얼굴에 당황한 기색이 스며듭니다."
+                    },
+                    {
+                        char: "A shocked Korean antagonist staring at a smartphone screen",
+                        act: "dropping items in disbelief while looking at undeniable legal proof",
+                        nar: "숨겨져 있던 결정적인 진실과 증거가 세상에 공개되는 순간입니다."
+                    },
+                    {
+                        char: "A sharp-eyed Korean expert presenting official documents",
+                        act: "pointing firmly at the contract papers while explaining the legal penalty",
+                        nar: "더 이상 빠져나갈 구멍은 없습니다. 철저한 법적 책임이 그들을 조여옵니다."
+                    },
+                    {
+                        char: "A triumphant Korean protagonist holding documents",
+                        act: "speaking with absolute authority while the offender trembles in fear",
+                        nar: "인과응보란 바로 이런 것! 오만했던 이들의 입에서 후회의 한숨이 터져 나옵니다."
+                    },
+                    {
+                        char: "A deeply regretful Korean antagonist kneeling down",
+                        act: "begging for forgiveness with tears and hands clasped together",
+                        nar: "뒤늦은 후회를 해봐도 이미 때는 너무 늦었습니다. 뿌린 대로 거두는 법이니까요."
+                    }
+                ];
+
+                if (index === total) {
+                    character = "A victorious Korean protagonist and a deeply regretful offender";
+                    action = "the protagonist walking away triumphantly while the offender kneels in deep regret";
+                    narration = `오늘 전해드린 "${topic}" 이야기처럼, 진실과 정의는 언제나 승리하는 법입니다.`;
+                } else {
+                    let step = pool[(index - 1) % pool.length];
+                    character = step.char;
+                    action = step.act;
+                    narration = step.nar;
+                }
+            } else if (catKey === 'yadam' || catKey === 'mindam' || catKey === 'seolhwa') {
+                const folkPool = [
+                    {
+                        char: "A wise traditional Korean scholar wearing Hanbok",
+                        act: "looking far across a misty traditional Korean village at dawn",
+                        nar: `깊은 산골에 전해지는 신비로운 이야기, "${topic}"의 막이 오릅니다.`
+                    },
+                    {
+                        char: "A rustic Korean village background with traditional houses",
+                        act: "facing an unexpected dilemma that troubles all the villagers",
+                        nar: "평화롭던 마을에 뜻밖의 시련이 찾아오며 사람들의 근심이 깊어집니다."
+                    },
+                    {
+                        char: "A clever traditional Korean character holding an old scroll",
+                        act: "thinking deeply beneath an ancient zelkova tree to find a wise solution",
+                        nar: "모두가 포기하려던 그 때, 슬기로운 지혜를 모아 난관을 헤쳐나갑니다."
+                    },
+                    {
+                        char: "A harmonious gathering of traditional Korean villagers",
+                        act: "smiling warmly and helping each other with joyful expressions",
+                        nar: "서로를 향한 믿음과 배려가 모여 거대한 시련을 아름답게 극복해 냅니다."
+                    }
+                ];
+                if (index === total) {
+                    character = "A peaceful traditional Korean village community";
+                    action = "blessed under golden sunset light with timeless harmony";
+                    narration = `옛 선조들의 지혜가 담긴 "${topic}"의 교훈이 우리 가슴속에 깊은 울림을 줍니다.`;
+                } else {
+                    let step = folkPool[(index - 1) % folkPool.length];
+                    character = step.char;
+                    action = step.act;
+                    narration = step.nar;
+                }
+            } else {
+                // 감성 및 동화 카테고리
+                const cozyPool = [
+                    {
+                        char: "A warm-hearted Korean person inside a cozy home",
+                        act: "gazing out a cozy window with nostalgic memories and soft sunlight",
+                        nar: `가슴 한구석을 아련하게 적시는 이야기, "${topic}" 속으로 들어갑니다.`
+                    },
+                    {
+                        char: "A lonely Korean traveler walking on a quiet path",
+                        act: "stepping gently on fallen autumn leaves with deep emotional resonance",
+                        nar: "바쁘게 살아온 삶의 길목에서 잠시 멈춰 서서 소중한 추억을 되새겨봅니다."
+                    },
+                    {
+                        char: "A smiling Korean person in a serene landscape",
+                        act: "holding a warm teacup while looking at blooming wildflowers",
+                        nar: "스쳐 지나간 따스한 인연과 고마운 얼굴들이 하나둘 떠오릅니다."
+                    }
+                ];
+                if (index === total) {
+                    character = "A deeply moved Korean protagonist";
+                    action = "smiling with gentle tears of gratitude under a beautiful sunset";
+                    narration = `오늘 함께 나눈 "${topic}"의 온기가 여러분의 내일을 환하게 밝혀주기를 바랍니다.`;
+                } else {
+                    let step = cozyPool[(index - 1) % cozyPool.length];
+                    character = step.char;
+                    action = step.act;
+                    narration = step.nar;
+                }
+            }
+            return { character, action, narration };
+        }
+
+        // ===== 참교육 인기 스토리 TOP5 (반전 + 사이다 전개) =====
+        let cheolgukType = 'auto';
+        const CHEOLGUK_TOP5 = [
+            { name: "🥇 숨은 고수의 정체 공개", beats: [
+                { c: "A humble ordinary Korean person in plain clothes", a: "quietly enduring rude behavior in an everyday Korean place", n: t => `평범해 보이던 한 사람 앞에서 "${t}" 사건이 시작됩니다.` },
+                { c: "An arrogant Korean offender", a: "shouting and belittling the humble person in front of onlookers", n: t => "상대는 눈앞의 사람이 누구인지도 모른 채 점점 선을 넘습니다." },
+                { c: "The calm Korean protagonist with a half-smile", a: "slowly taking out a phone and making a short call", n: t => "그런데 이상합니다. 주인공은 화내지 않고 조용히 전화를 겁니다." },
+                { c: "Korean onlookers whispering with surprised faces", a: "well-dressed staff arriving and bowing politely to the protagonist", n: t => "잠시 후, 누군가 달려와 깊이 고개를 숙입니다. 분위기가 한순간에 뒤집힙니다." },
+                { c: "A pale Korean offender frozen in shock", a: "reading a business card that reveals the protagonist's true identity", n: t => "명함 한 장에 적힌 이름. 그 순간 상대의 얼굴이 새하얗게 질립니다." },
+                { c: "A trembling Korean offender", a: "bowing deeply and apologizing in front of the crowd", n: t => "방금 전까지 큰소리치던 입에서 떨리는 사과가 쏟아집니다." }
+            ], end: { c: "The calm Korean protagonist walking away while the offender stays frozen", a: "walking away with a quiet smile as the crowd watches", n: t => `"${t}" 이야기, 사람을 겉모습으로 함부로 대하면 안 된다는 걸 통쾌하게 보여줍니다.` } },
+
+            { name: "🥈 블랙박스·녹음 증거 한 방 역전", beats: [
+                { c: "A wronged Korean protagonist staying composed", a: "being falsely accused in a tense everyday Korean setting", n: t => `"${t}"... 억울한 일을 당한 주인공, 하지만 모든 순간은 이미 기록되고 있었습니다.` },
+                { c: "A loud Korean offender", a: "denying everything and pointing a finger at the protagonist", n: t => "상대는 증거가 없다며 오히려 더 크게 큰소리를 칩니다." },
+                { c: "The Korean protagonist with steady eyes", a: "silently taking out a smartphone", n: t => "주인공은 반박 대신 조용히 휴대폰을 꺼내 듭니다." },
+                { c: "A smartphone screen playing recorded footage", a: "the offender's own words and actions playing back clearly in front of everyone", n: t => "재생 버튼이 눌리자, 상대가 했던 말과 행동이 그대로 흘러나옵니다." },
+                { c: "A Korean offender whose face drains of color", a: "stepping back as bystanders look at the offender coldly", n: t => "거짓말은 순식간에 무너지고, 주변의 시선이 싸늘하게 바뀝니다." },
+                { c: "Korean officials or police arriving", a: "organizing the facts while the offender stays silent", n: t => "곧이어 도착한 담당자 앞에서 모든 사실이 하나씩 정리됩니다." }
+            ], end: { c: "The Korean protagonist and a speechless offender", a: "the protagonist putting the phone away calmly while the offender looks down in defeat", n: t => `"${t}" 이야기, 기록은 거짓말보다 강하다는 사이다 같은 교훈을 남깁니다.` } },
+
+            { name: "🥉 적반하장 → 온라인 공개 망신", beats: [
+                { c: "A hardworking Korean protagonist", a: "dealing with a rude person in a public Korean place", n: t => `"${t}" 사건은 아주 사소한 무례에서 시작되었습니다.` },
+                { c: "A Korean offender getting angrier", a: "turning the blame around and yelling at the protagonist", n: t => "잘못을 하고도 사과는커녕 오히려 화를 내며 적반하장으로 나옵니다." },
+                { c: "Several Korean bystanders", a: "quietly raising their phones to record the scene", n: t => "참다못한 사람들이 조용히 카메라를 켜기 시작합니다." },
+                { c: "A smartphone showing a viral video with thousands of comments", a: "the clip spreading rapidly across social media", n: t => "영상은 순식간에 퍼지고, 분노한 댓글이 쉴 새 없이 달립니다." },
+                { c: "A worried Korean offender", a: "staring at a flood of incoming calls and messages", n: t => "신상이 알려지며 연락이 빗발치고 상대의 일상이 흔들립니다." },
+                { c: "A Korean offender typing an apology", a: "posting a public apology with shaking hands", n: t => "결국 공개 사과문을 올려보지만, 이미 너무 늦었습니다." }
+            ], end: { c: "The Korean protagonist and a regretful offender", a: "the protagonist returning to a peaceful day while the offender stares at the screen", n: t => `"${t}" 이야기, 뿌린 대로 거두는 세상이라는 걸 통쾌하게 보여줍니다.` } },
+
+            { name: "4위 갑질 상대에게 규정·계약서 철퇴", beats: [
+                { c: "A calm Korean protagonist at a counter or desk", a: "listening to an unreasonable demand", n: t => `"${t}"... 부당한 요구 앞에서 이야기가 시작됩니다.` },
+                { c: "A Korean offender showing off status", a: "pushing demands and ignoring the rules", n: t => "상대는 자신의 지위만 믿고 규정을 무시한 요구를 밀어붙입니다." },
+                { c: "The Korean protagonist reviewing documents", a: "carefully reading a contract and the official rules", n: t => "주인공은 계약서와 규정을 하나하나 차분히 확인합니다." },
+                { c: "The Korean protagonist pointing at a document", a: "citing the exact clause as the offender goes silent", n: t => "정확한 조항을 짚으며 반박하자 상대의 말문이 턱 막힙니다." },
+                { c: "A Korean offender receiving official notices", a: "reading an official complaint notice with a stiff face", n: t => "정식으로 접수된 신고가 상대를 조여오기 시작합니다." },
+                { c: "A Korean offender facing consequences", a: "signing papers with a defeated expression", n: t => "결국 책임을 피할 수 없는 처분이 내려집니다." }
+            ], end: { c: "The Korean protagonist and a defeated offender", a: "the protagonist closing the folder and leaving with confidence", n: t => `"${t}" 이야기, 규정 앞에서는 누구도 예외가 될 수 없다는 사이다 결말입니다.` } },
+
+            { name: "5위 알고 보니 그 사람이… 부메랑 인과응보", beats: [
+                { c: "A polite Korean protagonist", a: "being treated rudely by a stranger in a public place", n: t => `"${t}"... 약해 보인다는 이유로 무시당한 한 사람의 이야기입니다.` },
+                { c: "An arrogant Korean offender", a: "making insulting remarks without any hesitation", n: t => "상대는 약자라고 생각한 사람에게 거침없이 막말을 쏟아냅니다." },
+                { c: "A nervous Korean offender in formal wear", a: "preparing for a very important meeting", n: t => "그런데 얼마 뒤, 상대에게 인생을 바꿀 중요한 자리가 마련됩니다." },
+                { c: "Two Korean people facing each other across a table", a: "the offender freezing as the protagonist sits in the decision-maker's seat", n: t => "그 자리에서 마주 앉은 사람은 바로 그날 무시당했던 주인공이었습니다." },
+                { c: "The calm Korean protagonist", a: "calmly recalling the earlier incident in a quiet voice", n: t => "주인공은 그날 있었던 일을 담담하게 하나씩 꺼냅니다." },
+                { c: "A Korean offender with a pale face", a: "realizing the chance is slipping away", n: t => "단 한 번의 무례가 쌓아온 기회를 모두 날려 버립니다." }
+            ], end: { c: "The Korean protagonist and a regretful offender", a: "the protagonist standing up and leaving the room while the offender sits in silence", n: t => `"${t}" 이야기, 오늘 내가 던진 무례는 반드시 돌아온다는 걸 알려줍니다.` } }
+        ];
+
+        // ===== 고전(옛이야기) 전용: 한복 + 조선 배경 연출 =====
+        const CLASSIC_RAW = [
+            { beats: [
+                ["A humble Korean man in worn-out hanbok on a dusty Joseon-era road", "bowing quietly to a rude village magnate", '"{t}" 이야기는 남루한 행색의 한 사람이 고을에 들어서며 시작됩니다.'],
+                ["An arrogant Korean landlord in silk hanbok", "scolding and belittling the humble man before the villagers", "부자는 상대가 누구인지도 모른 채 큰소리로 업신여깁니다."],
+                ["The humble man in hanbok with a calm smile", "quietly glancing at a hidden token tucked in his sleeve", "그러나 남루한 이는 화내지 않고 소매 속 무언가를 조용히 확인합니다."],
+                ["Joseon-era officers in uniform", "rushing through the gate and kneeling before the humble man", "그때 관졸들이 우르르 달려와 그 앞에 무릎을 꿇습니다."],
+                ["A pale Korean landlord in hanbok frozen in shock", "staring at the royal token held high", "높이 치켜든 신표를 본 순간, 부자의 얼굴이 새하얗게 질립니다."],
+                ["A trembling landlord in hanbok kneeling", "begging for mercy in the courtyard as villagers watch", "방금 전까지 호통치던 입에서 떨리는 용서의 말이 터져 나옵니다."]
+            ], end: ["The calm man in hanbok and a kneeling landlord in a Joseon village at sunset", "walking out the gate while the landlord stays kneeling", '"{t}" 이야기, 사람을 겉모습으로 업신여기면 안 된다는 옛 교훈을 통쾌하게 전합니다.'] },
+            { beats: [
+                ["A wronged Korean protagonist in hanbok in a magistrate's courtyard", "standing accused falsely before the magistrate", '"{t}"... 억울한 누명을 쓴 주인공, 그러나 진실은 가까이에 있었습니다.'],
+                ["A loud Korean accuser in fine hanbok", "denying everything and pointing at the protagonist", "상대는 증거가 없다며 오히려 더 크게 호통을 칩니다."],
+                ["The protagonist in hanbok with steady eyes", "quietly pulling a wrapped cloth bundle from his sleeve", "주인공은 말없이 품 안의 보따리를 조용히 꺼냅니다."],
+                ["A Joseon magistrate in official robe", "examining the evidence laid on a low wooden table", "원님이 증거물을 살피자, 상대의 거짓이 하나둘 드러납니다."],
+                ["A sweating pale Korean accuser in hanbok", "stepping back as villagers whisper in the courtyard", "거짓말은 무너지고, 구경하던 마을 사람들의 눈빛이 싸늘해집니다."],
+                ["Court runners restraining the accuser", "the magistrate pointing his fan and delivering the verdict", "원님의 판결이 내려지고 모든 진실이 정리됩니다."]
+            ], end: ["The protagonist in hanbok and a defeated accuser in the courtyard", "the protagonist bowing politely and leaving as the accuser looks down", '"{t}" 이야기, 거짓은 끝내 증거 앞에 무너진다는 옛 지혜를 남깁니다.'] },
+            { beats: [
+                ["A kind Korean protagonist in hanbok", "being mistreated in a busy Joseon marketplace", '"{t}"... 아주 사소한 무례가 장터에서 시작됩니다.'],
+                ["A rude Korean offender in hanbok", "turning the blame around and shouting at the protagonist", "잘못하고도 사과는커녕 오히려 적반하장으로 나옵니다."],
+                ["Korean villagers in hanbok", "whispering and watching with disapproving eyes", "구경하던 사람들이 서로 눈짓하며 이 일을 마음에 새깁니다."],
+                ["Korean villagers gathered at a village well and market", "gossiping excitedly as the story spreads", "이야기는 우물가와 장터를 타고 순식간에 온 마을로 퍼집니다."],
+                ["A worried Korean offender in hanbok", "walking through the village as everyone turns away", "어딜 가도 수군거리는 눈초리에 상대는 얼굴을 들지 못합니다."],
+                ["A humbled offender in hanbok", "bowing before the villagers and apologizing", "결국 마을 사람들 앞에 나와 고개를 숙이지만 이미 늦었습니다."]
+            ], end: ["The protagonist and a regretful offender in a Joseon village", "the protagonist returning to a peaceful day while the offender stands alone", '"{t}" 이야기, 뿌린 대로 거둔다는 옛말이 틀리지 않음을 보여줍니다.'] },
+            { beats: [
+                ["A calm Korean protagonist in hanbok", "facing an unreasonable demand from a powerful official", '"{t}"... 부당한 요구 앞에서 이야기가 시작됩니다.'],
+                ["An arrogant Korean official in official robe and hat", "ignoring the law and pressing his demands", "상대는 벼슬만 믿고 나라의 법도를 무시한 요구를 밀어붙입니다."],
+                ["The protagonist reading old documents by candlelight", "carefully checking ledgers and land records", "주인공은 문서와 장부를 밤새 차분히 살펴봅니다."],
+                ["The protagonist before a higher official", "pointing at the exact record as the offender falls silent", "정확한 기록을 짚으며 따지자 상대의 말문이 턱 막힙니다."],
+                ["A royal inspector arriving with attendants", "entering the government office and announcing an investigation", "마침내 감사가 출두하여 조사가 시작됩니다."],
+                ["An offender being stripped of his post", "taking off his official hat with a defeated face", "결국 책임을 피할 수 없는 처분이 내려집니다."]
+            ], end: ["The protagonist in hanbok and a defeated official", "the protagonist walking out of the office with confidence", '"{t}" 이야기, 법도 앞에서는 누구도 예외가 될 수 없다는 통쾌한 결말입니다.'] },
+            { beats: [
+                ["A humble Korean protagonist in hanbok", "being insulted by a stranger on a village road", '"{t}"... 약해 보인다는 이유로 무시당한 한 사람의 이야기입니다.'],
+                ["An arrogant Korean offender in hanbok", "mocking the protagonist without hesitation", "상대는 약하다고 여긴 사람에게 거침없이 막말을 쏟아냅니다."],
+                ["The offender in hanbok in a desperate situation", "falling into a serious trouble in the village", "그런데 얼마 뒤, 상대에게 뜻밖의 큰 어려움이 닥칩니다."],
+                ["Two Korean people in hanbok facing each other in a hanok courtyard", "the offender freezing as the protagonist stands as the only helper", "도움을 청하러 간 곳에서 마주친 사람은 바로 그날 무시당했던 주인공이었습니다."],
+                ["The calm protagonist in hanbok", "recalling the earlier day in a quiet voice", "주인공은 그날 있었던 일을 담담하게 하나씩 꺼냅니다."],
+                ["A pale offender in hanbok", "realizing that his only chance is gone", "단 한 번의 무례가 모든 기회를 날려 버립니다."]
+            ], end: ["The protagonist and a regretful offender in a hanok courtyard", "the protagonist turning away calmly while the offender kneels in silence", '"{t}" 이야기, 오늘 던진 무례는 반드시 돌아온다는 옛 교훈을 전합니다.'] }
+        ];
+        const CHEOLGUK_CLASSIC = CLASSIC_RAW.map(arc => ({
+            beats: arc.beats.map(x => ({ c: x[0], a: x[1], n: t => x[2].replace('{t}', t) })),
+            end: { c: arc.end[0], a: arc.end[1], n: t => arc.end[2].replace('{t}', t) }
+        }));
+        const CHEOLGUK_CONNECT = ["이어서,", "바로 그 순간,", "잠시 후,", "그러자,", "곧이어,"];
+        const CHEOLGUK_SHOT = ["close-up on face", "wide establishing shot", "over-the-shoulder shot", "slow push-in", "low-angle shot"];
+
+        const CHEOLGUK_GROUPS = [["동창회서 무시당한 친구가 회사 대표", "허름한 노인을 쫓아낸 백화점 직원", "신입에게 막말한 선배와 진짜 회장님", "시골 할머니 무시한 은행 직원의 후회", "배달기사 하대한 입주민, 건물주였다", "청소부로 오해한 교수에게 반말한 학생", "낡은 점퍼 손님 내쫓은 딜러의 최후", "알바생 무시한 진상, 본사 사장 딸이었다", "면접장서 비웃던 면접관이 만난 대표", "노점상 할머니 무시한 갑부 며느리", "택시기사 얕보던 승객과 전직 판사", "무명배우 비웃던 감독과 대배우", "이삿짐 일꾼 무시한 이웃, 집주인이었다", "새치기하던 환자 앞에 나타난 병원장", "검소한 신부 무시한 시댁, 재벌 상속녀였다", "수리기사 무시한 부장, 대주주 아들이었다", "등산복 노인 무시한 호텔 직원의 반전", "초보 운전자 조롱한 차주, 정비소 사장", "어린 점장 무시한 어르신, 건물주였다", "인턴 갑질한 팀장, 인턴이 오너 손자", "놀부, 거지 행색 아우를 쫓아냈다가", "변학도 앞에 나타난 암행어사", "거지 차림 걸인 내쫓은 고을 부자 영감", "온달, 바보라 놀리던 이들의 최후", "선녀와 나무꾼, 숨긴 날개옷의 정체", "콩쥐, 구박하던 팥쥐 모녀의 몰락", "심청, 아버지를 속인 화주승의 최후", "장화홍련, 계모의 거짓말 들통", "방자전, 신분 무시하던 도령의 반전", "금도끼 은도끼, 욕심쟁이의 몰락", "흥부, 박씨 하나로 뒤집은 인생", "허생, 장사꾼 무시한 양반의 낭패", "박문수, 암행 점검에 걸린 탐관오리", "춘향, 사또의 수청 요구 응징", "별주부, 거짓말한 용궁 관리 응징", "의좋은 형제 갈라놓던 이웃", "도깨비방망이, 욕심쟁이 형의 최후", "호랑이와 곶감, 허세 부리다 혼쭐", "해와 달, 남매 속인 호랑이 응징", "우렁각시, 총각 재산 노린 사기꾼"], ["블랙박스로 끝낸 보복운전자 응징", "CCTV로 밝혀진 주차장 뺑소니", "녹음 파일로 뒤집은 막말 상사", "카톡 캡처로 끝낸 거짓말쟁이 이웃", "택배 도난범을 잡은 현관 카메라", "층간소음 가해자가 놓친 소음 측정 기록", "월급 떼먹던 사장 앞에 내민 근무기록", "시험 부정 누명을 벗긴 필적 증거", "가게 앞 쓰레기 투기범의 CCTV 박제", "환불 거부 업체에 내민 통화 녹음", "없던 일이라던 시어머니 폭언 녹음", "거짓 눈물 연기한 진상 손님의 영상", "주차 시비 이웃과 블랙박스 한 방", "공금 빼돌린 팀장, 회계 기록으로 발각", "거짓 소문 퍼뜨린 동료와 메신저 기록", "헬스장 사기 트레이너를 잡은 계약 영상", "중고거래 사기꾼 잡은 채팅 캡처", "전세 사기 집주인 앞에 내민 등기부", "몰래 촬영하던 진상 손님을 찾은 증거", "적반하장 접촉사고 가해자와 영상", "학원 원장의 부당 해고를 뒤집은 문자", "카페 진상 손님의 거짓 클레임 영상", "무단 침입 이웃을 잡은 도어 카메라", "마트 도둑 누명 벗긴 CCTV", "허위 후기 쓴 경쟁업체와 로그 기록", "술자리 갑질 상사를 기록한 단체 대화", "택시 바가지 기사를 잡은 영수증", "이삿짐 파손 발뺌과 이삿날 영상", "보험 사기범을 잡은 블랙박스 전체 영상", "회식 강요 부장과 근로기준법 기록", "대리 시험 부탁한 동창과 통화 기록", "부실 시공업체와 현장 사진 기록", "암행어사, 숨겨둔 증거물로 뒤집은 판결", "원님 재판, 증거로 뒤집은 판결", "콩쥐의 찢긴 옷이 밝힌 계모의 학대", "장화홍련, 철산 부사 앞에서 밝혀진 진실", "쥐 둔갑 설화, 가짜를 가려낸 증거", "서동요, 퍼뜨린 소문의 출처 추적", "흥부, 제비 다리 부러뜨린 놀부의 증거", "호랑이 눈썹으로 거짓말쟁이 가려내기"], ["식당서 난동 부린 진상 영상 박제", "지하철 노약자석 무법자 박제", "목줄 없는 무개념 견주 영상", "도로 한복판 보복운전 영상 확산", "엘리베이터 갑질 입주민 영상", "마트 직원에게 소리친 손님 영상", "인플루언서 협찬 갑질 폭로", "무단 투기범이 박제된 동네 게시판", "알바 급여 떼먹은 사장의 후기 폭로", "캠핑장 쓰레기 방치 진상 영상", "카페 노트북 점거 진상 손님 박제", "장애인 주차구역 상습 주차 영상", "새치기 아저씨의 큰소리와 영상 반전", "응급실 난동자 영상 확산", "학부모 갑질 녹취 폭로", "배달 리뷰 협박범의 신상 박제", "해수욕장 바가지 업주 영상 폭로", "놀이터 독점하던 무개념 보호자", "숙박 환불 거부 갑질 사장 폭로", "공공장소 담배 진상 영상과 과태료", "기내 난동 승객 영상 확산", "도서관서 소란 피우던 진상의 반전", "주민 단톡방 갑질 반장 폭로", "골프장 캐디 갑질 손님 영상", "헬스장 기구 독점 진상 영상", "전통시장 상인 무시한 손님 영상", "택배 기사에게 막말한 고객 영상", "버스 기사 무시하던 승객 영상", "이웃 흡연 진상 폭로 영상", "극장 소란 관객 영상 확산", "공연장 새치기 팬 영상 확산", "공원 취식 진상 영상 박제", "놀부, 온 마을에 소문난 심보", "변학도, 한양까지 퍼진 탐관오리 소문", "팥쥐 모녀, 장터에 퍼진 소문의 반전", "흥부 놀부, 온 고을이 지켜본 형제 갈등", "뺑덕어멈, 속인 사연이 온 동네 소문", "방귀쟁이 며느리, 소문난 방귀의 반전", "소금장수 속이던 욕심쟁이, 장터 소문", "신분 자랑하던 도령, 방자 덕에 소문난 망신"], ["임대료 두 배 요구한 건물주의 몰락", "계약 조항 무시한 하청 갑질 상무", "부당 해고 통보한 사장과 노동청", "퇴직금 안 준 업주의 철퇴", "일방 계약 해지한 업체의 위약금", "보증금 안 돌려주던 집주인과 내용증명", "악성 민원 학부모와 교사 보호 규정", "층간소음 가해자와 관리규약 조항", "단가 후려치기 대기업과 공정위", "프랜차이즈 본사 갑질과 가맹사업법", "수당 안 주던 사장과 근로계약서", "허위 광고 업체와 소비자원", "임차인 쫓아내려던 건물주의 패배", "공사 대금 떼먹은 원청과 하도급법", "환불 거부 원장과 환불 규정", "헬스장 먹튀 사장과 소비자 보호", "택배 분실 발뺌 업체와 약관 조항", "관리비 횡령한 관리소장의 적발", "입찰 담합한 업체 철퇴", "무급 노동 시킨 회사와 근로감독", "계약서 한 줄로 뒤집은 분양 사기", "렌터카 수리비 바가지와 계약 조항", "회식 강요 부장과 괴롭힘 신고", "산후휴가 막은 사장의 철퇴", "무단 해고한 점장과 구제 신청", "부당 계약 요구한 제작사의 패배", "프리랜서 대금 떼먹은 의뢰인 철퇴", "통신사 위약금 갑질과 약관 심사", "고객 정보 유출한 업체의 철퇴", "허위 매물 올린 중개인의 면허 정지", "전세 특약 한 줄로 막은 사기", "스톡옵션 약속 뒤집은 대표의 패소", "탐관오리, 암행 감사에 걸린 세곡 횡령", "놀부 땅문서, 흥부의 문서 한 줄 반전", "이방, 장부 조작 적발", "허생, 독점 횡포 부린 상인 응징", "변학도 직권남용, 어사 출두 철퇴", "공양미 삼백 석 사기 문서 적발", "고을 원님, 판결로 뒤집은 땅 분쟁", "박문수, 곡식 장부로 적발한 비리"], ["막말하던 손님이 면접장서 만난 직원", "신입을 괴롭힌 선배의 승진 탈락", "거지 취급한 사람이 찾아온 거래처", "갑질한 고객이 다시 찾은 가게의 반전", "알바 무시한 학생의 취업 면접 반전", "주차장 새치기한 차주와 중요한 계약", "층간소음 이웃이 만난 새 집주인", "진상 손님이 병원서 만난 의사의 반전", "소개팅서 웨이터에게 막말한 남자의 최후", "환승 연애 속인 사람의 인과응보", "동료 공 가로챈 대리의 마지막 보고", "수습 사원 무시하던 팀장의 인사 평가", "커닝하던 친구가 만난 시험 감독관", "시어머니 구박하던 며느리의 입장 역전", "가난한 친구 무시한 결혼식 반전", "길 묻던 노인 외면한 사람의 면접", "아이 학대한 보호자의 CCTV 반전", "빌려간 돈 안 갚던 동창의 부메랑", "마트 직원 무시한 손님과 취업 면접", "유산 독차지한 형제의 몰락", "거짓 소문 퍼뜨린 사람의 부메랑", "배달 기사에 막말한 고객의 반전", "후배 무시하던 선배와 재회한 회사", "비싼 차 자랑하던 지인의 몰락", "식당 불평만 하던 손님의 반전", "이웃집 험담하던 사람의 소문", "아이 방치한 부모의 부메랑", "돈 자랑하던 사촌의 파산", "시험지 유출한 학생의 반전", "무례한 단골에게 돌아온 마지막 주문", "놀부의 제비 다리 학대 부메랑", "선비와 호랑이, 약속 어긴 이의 반전", "콩쥐 신발, 새엄마 모녀의 부메랑", "토끼와 거북이, 방심한 도전자의 몰락", "개미와 베짱이, 놀던 이의 후회", "은혜 갚은 까치, 구해준 이의 보답", "욕심쟁이 영감, 금덩이 대신 후회", "도깨비 감투, 거만한 갑부의 낭패", "혹부리 영감, 욕심쟁이 이웃의 반전", "나무꾼, 도끼 잃은 정직한 청년의 보답"]];
+        const CHEOLGUK_TYPE_MAP = {};
+        const CHEOLGUK_ITEMS = [];
+        const CHEOLGUK_CLASSIC_SET = new Set();
+        const CHEOLGUK_CLASSIC_N = [20, 8, 8, 8, 10];
+        for (let r = 0; r < 40; r++) CHEOLGUK_GROUPS.forEach((g, ti) => {
+            CHEOLGUK_TYPE_MAP[g[r]] = ti; CHEOLGUK_ITEMS.push(g[r]);
+            if (r >= 40 - CHEOLGUK_CLASSIC_N[ti]) CHEOLGUK_CLASSIC_SET.add(g[r]);
+        });
+
+        const SENIOR_GROUPS = [["키오스크 앞 어르신을 재촉한 청년, 알고 보니 사장님", "햄버거 키오스크 헤맨 할아버지, 본사 회장님이었다", "키오스크 못 쓴다 비웃던 손님, 면접관이 어르신", "무인 카페서 도와준 할머니의 정체", "은행 앱 몰라 쩔쩔맨 노인, 알고 보니 개발자 출신", "스마트폰 못 쓴다 무시한 직원, 대주주 할머니", "무인 주문기 앞 노신사, 점포 건물주였다", "기차표 예매 헤맨 할아버지, 철도 임원 출신", "영화관 키오스크 헤맨 노신사, 극장 대표였다", "셀프 계산대 핀잔 들은 할머니의 정체", "무인 발급기 앞 어르신, 구청장 출신이었다", "지하철 발권기 도운 청년과 할머니의 정체", "스마트폰 송금 못 하던 할아버지, 은행 지점장 출신", "도서관 대출기 헤맨 노인, 유명 작가였다", "병원 접수기 도운 어르신, 병원 설립자였다", "배달앱 못 쓰던 할머니, 프랜차이즈 창업자", "무인 아이스크림 가게 서성인 노인, 점주였다", "전기차 충전기 헤맨 어르신, 자동차 임원 출신", "공항 셀프 체크인 헤맨 노부부, 항공사 회장", "QR 메뉴판 앞 할머니 놀린 손님, 사장 어머니", "무인 세탁소서 쩔쩔맨 어르신, 건물 주인", "택시 호출 앱 못 쓴다 무시당한 노인의 정체", "카톡 못 쓴다 핀잔 들은 할아버지, 앱 개발자", "주차 정산기 앞 노신사, 시설 관리 이사", "무인 편의점 결제 헤맨 할머니, 본사 창업주", "스마트폰 수리점서 무시당한 어르신, 제조사 고문", "온라인 환불 헤맨 할머니, 쇼핑몰 대주주", "ATM 앞 어르신 재촉한 직원, 은행장 아버지", "무인 카페 커피 못 뽑은 노인, 원두 수입 회장", "키오스크 노인 비웃은 알바생, 본점 사장님이었다", "버스 도착 앱 몰라 헤맨 노인, 교통공사 전 사장", "기차 무인 발권 도운 청년, 할아버지가 회사 대표", "화면 확대 몰라 쩔쩔맨 할머니, 디자이너 출신", "무인 약국 키오스크 헤맨 어르신, 약사 선배", "스마트 TV 설정 못 하던 노인, 방송국 국장 출신", "무인 주유소 헤맨 어르신, 정유사 임원", "무인 호텔 체크인 헤맨 노부부, 호텔 소유주", "셀프 주문기 헤맨 노인, 가맹 본부 회장", "무인 사진관 쩔쩔맨 할머니, 유명 사진작가", "보안 설정 도와준 청년, 할머니는 보안 전문가"], ["키오스크 뒤에서 한숨 쉰 손님, CCTV 한 방", "어르신 주문 가로챈 사람과 매장 CCTV", "키오스크 결제 사기를 잡은 영수증", "ATM 앞 보이스피싱 막은 청년과 통화 녹음", "어르신 카드 몰래 쓴 점원, 결제 기록 적발", "무인 매장 도둑 누명 벗긴 영상", "키오스크 이중 결제, 로그로 밝힌 진실", "택배 문자 사기, 어르신이 남긴 녹음", "무인 매장 계산 누락 누명 벗긴 CCTV", "어르신 지갑 훔친 소매치기, 블랙박스에 딱 걸렸다", "보이스피싱 막은 은행 직원과 통화 녹음", "스미싱 속은 할머니, 청년이 남긴 캡처", "ATM 카드 바꿔치기 범인, 현장 CCTV", "비싼 요금제 가입시킨 판매점 녹취", "키오스크 잔돈 가로챈 점주, 기록으로 발각", "무인 주차 정산기 바가지, 영수증 한 장", "택시 앱 요금 부풀린 기사, 앱 기록 반전", "병원 접수기 새치기 범인, 복도 CCTV", "무인 세탁소 도난 누명 벗은 어르신 영상", "쇼핑몰 사기, 어르신의 채팅 기록", "몰래 결제한 손주 친구, 결제 내역", "가짜 은행원 통화 녹음 한 방", "중고 스마트폰 바가지 판매점 영상", "키오스크 앞 폭언 손님, 매장 카메라 반전", "주문 대신해주고 돈 받은 직원 영상", "지하철 발권기 사기꾼 잡은 CCTV", "경로 우대 거부 직원, 영상 한 방", "무인 아이스크림 도난 오해, 영상으로 벗은 누명", "전화금융사기 막은 택시기사 블랙박스", "주차 요금 정산 오류, 로그로 밝힌 환불", "기차표 환불 거부 매표소, 통화 기록", "이웃 사기, 어르신 집 카메라 증거", "가짜 쇼핑몰 속은 할머니, 캡처로 환불", "무단 결제 앱, 결제 알림 증거", "어르신 폰 몰래 본 직원, 접속 기록", "공유 자전거 요금 폭탄, 이용 기록", "키오스크 오류 환불 거부, 화면 촬영본", "배달 기사 사칭 사기, 문자 캡처", "무인 약국 오작동 항의, 로그와 영상", "버스 기사 막말, 차내 블랙박스"], ["키오스크 앞 어르신께 소리친 진상 영상 박제", "뒤에서 재촉하며 한숨 쉰 무개념 손님 영상", "어르신 무시한 카페 직원 발언 폭로", "어르신 대신 주문해준 학생의 훈훈한 반전", "키오스크 줄 새치기 아저씨 영상", "어르신 비웃은 직원, 후기로 퍼진 반전", "배달앱 못 쓴다 놀리던 가족 영상 반전", "버스 하차 벨 헤맨 어르신 놀린 학생 영상", "키오스크 앞 어르신께 눈치 준 청년 영상 확산", "무인 카페서 어르신 쫓아낸 손님 영상", "어르신 놀린 직원 SNS 박제", "폰 대신 눌러준 친절한 청년 영상 반전", "셀프 계산대 줄 재촉한 진상 영상", "어르신 비웃던 후배, 가족 단톡방 반전", "병원 접수기 앞 막말한 보호자 영상", "지하철 발권기 새치기 진상 영상 폭로", "배달앱 놀리던 아들 영상 반전", "영화관 키오스크 어르신 밀친 관객 영상", "어르신 도운 알바생 훈훈한 영상 대박", "무인 편의점서 어르신 무시한 점주 후기", "버스 카드 못 찍은 어르신께 소리친 기사 영상", "은행 번호표 기계 새치기 진상 영상", "주문해준 학생, 사장님 선물 반전", "공항 키오스크 어르신 놀린 승객 영상", "QR 주문 몰라 헤맨 어르신께 짜증낸 손님", "폰 사용법 알려준 초등학생 영상", "무인 주차장서 어르신께 경적 울린 운전자", "어르신 비웃은 유튜버, 댓글 폭주 반전", "편의점 키오스크 어르신 놀린 학생 영상", "주민센터 발급기 도운 공무원 영상", "길 안내 앱 무시한 택시기사 영상", "스마트폰 못 쓴다 놀린 며느리 영상", "무인 점포 어르신 가방 뒤진 손님 영상", "무례한 카페 직원 영상 폭로", "기차역 키오스크 양보한 청년 영상", "무인 계산대 오작동 몰아세운 직원 영상", "영상 편집 도운 청년, 구독자 급증", "키오스크 교실 개강, 청년들의 영상", "어르신 길 막은 무인 매장 주인 영상", "셀프 주유소 어르신 도운 직원 영상"], ["키오스크만 고집하던 가게, 어르신 응대 민원", "디지털 소외 어르신 거부한 매장과 소비자 민원", "현금 거부 가맹점에 접수된 민원과 본사 철퇴", "무인 점포 환불 거부와 약관 조항", "앱 가입만 강요한 은행, 대면 창구 유지 요구", "휠체어 어르신 못 쓰는 키오스크와 편의 기준", "스마트폰 해지 위약금 바가지, 약관 한 줄 반전", "불필요 요금제 강요한 판매점과 소비자원", "키오스크 전용 매장, 어르신 응대 개선 요청", "시각 장애 어르신과 키오스크 접근성 기준", "은행 창구 축소 항의와 금융 접근 규정", "무인 민원 발급기 오류, 시정 요청", "무인 점포 환불 규정과 소비자 보호 조항", "통신 약정 해지 방해, 약관 한 줄 반전", "앱 전용 할인 차별, 시정 요청", "무인 주차 정산기 요금 오류 정정 요청", "병원 앱 예약 강제, 전화 접수 유지 요청", "열차 모바일 승차권만 고집, 현장 발권 요구", "식당 현금 거부와 결제 수단 안내 의무", "무인 가게 영수증 미발급 신고", "요금제 동의 없이 가입, 철회 규정", "온라인 쇼핑 청약철회 7일, 환불 성공", "디지털 교육 신청, 주민센터 강좌 반전", "선불카드 잔액 환불 거부와 약관 조항", "공유 킥보드 요금 폭탄, 약관 정정", "구독 자동 결제 해지 방해, 신고", "키오스크 높이 불편 민원, 설치 기준 개선", "무인 카페 결제 오류, 이용약관 확인", "개인정보 과다 수집 앱, 시정 권고", "현장 구매 거부 극장, 소비자 민원", "단말기 가격 부풀린 판매점, 가격 공시", "사은품 약속 어긴 판매점, 계약 확인", "전용 창구 폐쇄 항의와 은행 약관", "무인 세차장 고장 환불 규정", "불완전 판매 보험, 청약 철회", "버스 환승 할인 오류 정정, 교통카드 규정", "체크인 앱 전용 숙소, 현장 접수 요구", "디지털 안내 의무 부족, 지자체 개선 요청", "무인 세탁소 분실 책임, 이용 약관 조항", "스마트폰 보험 강요, 해지 가능 조항"], ["키오스크 앞 어르신 무시한 청년이 면접장서 만난 분", "도와달라는 어르신 외면한 직원의 반전", "어르신께 훈수 두던 손님, 알고 보니 거래처", "어르신 도운 알바생, 뜻밖의 보답", "키오스크 알려준 할머니와 취업 면접", "스마트폰 가르쳐준 할아버지의 보답", "디지털 약자 놀리던 직장 후배의 부메랑", "무인 계산대 새치기한 사람의 최후", "어르신 재촉한 청년이 면접장서 만난 면접관", "키오스크 알려준 청년, 할아버지 회사 입사", "어르신 놀린 점원, 알고 보니 본사 감사", "무인 카페서 어르신 도운 학생, 장학금 보답", "어르신께 짜증낸 손님, 병원서 만난 의사 선생님", "스마트폰 가르쳐준 청년, 할머니의 선물", "길 안내 외면한 청년, 취업 면접 반전", "어르신 무시한 직원, 인사 평가 반전", "도움 외면한 손님, 훗날 도움을 청하다", "키오스크 새치기 청년, 시험장서 만난 감독관", "막말한 점장, 본사 방문 날 반전", "스마트폰 놀린 손주, 할머니의 유산 반전", "어르신 도운 택시기사, 뜻밖의 손님", "계산대 도운 학생, 할머니의 장학금", "어르신 비웃은 선배, 신입 때 도와준 은인", "은행 앱 도운 청년, 할머니는 팀장 어머니", "어르신 놀린 인플루언서, 광고 계약 취소", "폰 고쳐준 수리기사, 보답의 가게", "배달 기사 도운 어르신, 돌아온 보답", "차례 양보한 청년, 면접 합격 반전", "키오스크 외면한 직원, 본사 평가 반전", "짜증 부린 승객, 열차서 만난 승무원", "기차표 끊어준 학생, 할아버지의 용돈", "어르신 비웃은 후배, 회식 자리 반전", "중고거래 사기꾼, 알고 보니 경찰 아버지", "앱 도운 알바생, 정직원 특채", "새치기한 사람, 병원서 순서 밀린 후회", "도둑 오해받은 어르신, 도둑의 후회", "사기 판매원, 어르신 아들이 담당 검사", "손 잡아준 학생, 훗날 면접장 반전", "고장난 키오스크 고쳐준 어르신의 보답", "알림장 대신 폰 가르친 손녀, 할머니의 깜짝 선물"]];
+        const SENIOR_ITEMS = [];
+        const SENIOR_SET = new Set();
+        for (let r = 0; r < 40; r++) SENIOR_GROUPS.forEach((g, ti) => { CHEOLGUK_TYPE_MAP[g[r]] = ti; SENIOR_ITEMS.push(g[r]); SENIOR_SET.add(g[r]); });
+
+        // ===== 일관된 캐릭터 시트 + 연속 장면 프롬프트 (900자 제한 대응) =====
+        const PROMPT_LIMIT = 900, PROMPT_SAFE = 885;
+        function lenTag(t) { return ` (${t.length}자${t.length > PROMPT_LIMIT ? ' ⚠️900자 초과' : ''})`; }
+
+        function fillCast() {
+            const topic = currentTopicTitle;
+            copiedIdx = new Set();
+            let P, A, S, SET;
+            if (currentCategory === 'senior') {
+                P = "elderly Korean grandmother, ~75, gray permed hair, purple cardigan";
+                A = "young Korean man, ~25, black hoodie, backpack, never speaks";
+                S = "red-uniform staff and two customers";
+                SET = "Korean fast-food restaurant with a self-order kiosk";
+            } else if (CHEOLGUK_CLASSIC_SET.has(topic)) {
+                P = "kind Korean villager in plain clean hanbok";
+                A = "arrogant Korean man in silk hanbok and horsehair hat";
+                S = "a few villagers in hanbok";
+                SET = "Joseon-era village hanok courtyard";
+            } else {
+                P = "calm Korean woman, 40s, black bob hair, white blouse, gray coat";
+                A = "loud arrogant Korean man, 50s, slicked hair, flashy dark jacket";
+                S = "two or three bystanders in everyday clothes";
+                SET = 'one everyday Korean place fitting "' + topic + '"';
+            }
+            if (isOtherCat()) { const oc = deriveOtherCard(topic); P = oc.P; A = oc.A; S = oc.S; SET = oc.SET; }
+            [['castP', P], ['castA', A], ['castS', S], ['castSet', SET]].forEach(x => { const e = document.getElementById(x[0]); if (e) e.value = x[1]; });
+            if (!CHEOLGUK_CLASSIC_SET.has(topic) && (currentCategory === 'cheolguk' || currentCategory === 'senior')) {
+                const c = deriveCard(topic);
+                if (c.place) document.getElementById('castSet').value = c.place;
+                if (c.P) document.getElementById('castP').value = c.P;
+                if (c.A) document.getElementById('castA').value = c.A;
+                document.getElementById('castS').value = c.S;
+                document.getElementById('castT').value = c.twist;
+            } else { const e = document.getElementById('castT'); if (e) e.value = isOtherCat() ? deriveOtherCard(topic).T : ''; }
+            protLabel = currentCategory === 'senior' ? '할머니' : '주인공';
+            antLabel = currentCategory === 'senior' ? '청년' : '상대';
+        }
+
+        function castRules(sty) {
+            sty = sty || { col: 'bold yellow', angry: false };
+            const classic = isClassicTopic(currentTopicTitle);
+            const base = voMode === 'dialogue'
+                ? (classic ? "Only the quoted line is spoken, in formal old-style Korean" : "Only the quoted line is spoken, in Korean with honorific endings and no profanity") + (sty.angry ? ", in a furious scolding tone" : "")
+                : (includeVO ? "The narrator's voice is the only speech; people on screen show emotion with expressions" : "No speech, no voice-over");
+            return base + "; " + (subActive() ? `show the quoted line as ${sty.col} Korean subtitles with a black outline at the top of the screen` : "no subtitles")
+                + (currentCategory === 'senior' ? "; the young man scolds with an irritated angry tone and expression" : "")
+                + ". Match any reference image. Cinematic, photorealistic.";
+        }
+
+        function castText(extras = true) {
+            const v = id => (document.getElementById(id) || {}).value || '';
+            const ty = pickCheolgukType(currentTopicTitle), warm = ty === 5, t4 = ty === 4;
+            return `Cast (same faces, hair and clothes in every scene): Protagonist = ${v('castP')}; ${warm ? 'Others = ' + v('castS') : 'Antagonist = ' + v('castA') + (extras ? '; Extras = ' + v('castS') : '')}. Place${t4 ? ' (opening)' : ''}: ${v('castSet')}.`;
+        }
+
+        function buildScenePrompt(i, total, story) {
+            if (!isStoryCat()) {
+                const oldStyle = ['yadam', 'mindam', 'seolhwa'].includes(currentCategory);
+                const dl = voMode === 'dialogue' ? `${dlgText(i, total)}Only the quoted line is spoken, in ${oldStyle ? 'formal old-style' : 'polite'} Korean. ` : '';
+                return `Vertical 9:16 shorts format video, scene ${i} of ${total}. Featuring ${story.character}, ${story.action}. ${dl}Dramatic cinematic lighting, photorealistic 8k, ${subActive() ? 'bold yellow Korean subtitles of the quoted line at the top' : 'no subtitles'}. Background music: ${bgmEn()}.`;
+            }
+            const prev = i > 1 ? getUniqueDistributedStep(currentCategory, i - 1, total, currentTopicTitle) : null;
+            const t4 = pickCheolgukType(currentTopicTitle) === 4;
+            const warmTy = pickCheolgukType(currentTopicTitle) === 5;
+            const prem = currentTopicTitle.length > 36 ? currentTopicTitle.slice(0, 35) + '…' : currentTopicTitle;
+            const nar = story.narration.replace(/"/g, "'");
+            const dd = voMode === 'dialogue' ? getDialogue(i, total, currentTopicTitle) : null;
+            const sty = dd ? { col: dd.key === 'A' ? (dd.angry ? 'bold red jagged angry-style' : 'bold red') : (dd.key === 'S' ? 'bold white' : 'bold yellow'), angry: dd.angry } : { col: 'bold yellow', angry: false };
+            const vo = voMode === 'dialogue' ? dlgText(i, total) : (includeVO ? [`A calm Korean narrator says aloud: "${nar}" `, `Spoken Korean line, female narrator voice: "${nar}" `, `Narrator: "${nar}" `][voStyle] : "");
+            const mk = (withPrev, extras, premise, music) => `9:16 vertical video, scene ${i}/${total} of one continuous story${premise ? ' "' + prem + '"' : ''}. ${castText(extras)} ${warmTy ? 'The protagonist is visible in every shot.' : 'Both main characters are visible together in every shot.'} Now: ${story.character}: ${story.action}. ${vo}${music ? 'Music: ' + bgmEn() + '. ' : ''}`
+                + (withPrev && prev ? `Continues from: ${prev.action}; same characters and outfits${t4 ? '' : ', same place'}. ` : (i === 1 ? "This scene continues directly from the cover image: same characters, outfits and place. " : "")) + castRules(sty);
+            let t = mk(true, true, true, true);
+            if (t.length > PROMPT_SAFE) t = mk(false, true, true, true);
+            if (t.length > PROMPT_SAFE) t = mk(false, true, true, false);
+            if (t.length > PROMPT_SAFE) t = mk(false, false, true, false);
+            if (t.length > PROMPT_SAFE) t = mk(false, false, false, false);
+            if (t.length > PROMPT_SAFE) t = t.replace(castRules(sty), (voMode === 'dialogue' ? "Only the quoted line is spoken; " : includeVO ? "Only the narrator speaks; " : "No speech; ") + (subActive() ? (sty.col[0].toUpperCase() + sty.col.slice(1)) + " Korean subtitles at the top." : "no subtitles.") + " Photorealistic.");
+            return t;
+        }
+
+        function buildCoverPrompt() {
+            if (!isStoryCat()) {
+                return `Vertical 9:16 shorts format, YouTube thumbnail style. Featuring a Korean person, title text overlay reading "${currentTopicTitle}" displayed prominently in the center, bold ultra-large typography, dramatic lighting, cinematic composition, photorealistic 8k.`;
+            }
+            const v = id => (document.getElementById(id) || {}).value || '';
+            return `9:16 vertical thumbnail, the opening image of this story: "${currentTopicTitle}". ${castText(true)} ${pickCheolgukType(currentTopicTitle) === 5 ? "Show the protagonist with a warm gentle smile in that place, same outfit as in every scene." : "Show the protagonist and the antagonist facing each other tensely in that place, same outfits as in every scene, the antagonist glaring angrily."} Huge extra-bold flowing brush-script Korean title at the top of the screen in a red-to-yellow gradient with a thick black outline, reading "${currentTopicTitle}". Dramatic light, photorealistic.`;
+        }
+
+        function buildRefPrompt() {
+            const v = id => (document.getElementById(id) || {}).value || '';
+            return `Character reference sheet, plain light-gray background, full-body front view, the same faces and outfits will be reused in every scene. Protagonist = ${v('castP')}; Antagonist = ${v('castA')}; Extras = ${v('castS')}. Photorealistic, no text, 9:16.`;
+        }
+        // ===== /캐릭터 시트 =====
+
+        // ===== 추가 기능 모음 =====
+        let subOn = true, clipSec = 8, voStyle = 0, copiedIdx = new Set(), includeVO = false, sodaLevel = 'normal', listMode = 'cat';
+        function lsGet(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }
+        function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+
+        // 8. 사이다 강도
+        const SODA_LABELS = { mild: '🍃 순한맛', normal: '🥤 기본', spicy: '🌶️ 매운맛' };
+        const SODA_END = {
+            mild: { n: " 상대는 진심으로 반성했고, 모두가 훈훈하게 마무리됩니다.", a: ", the antagonist sincerely apologizes and the protagonist graciously accepts" },
+            spicy: { n: " 그리고 상대는 모든 것을 잃고 끝내 홀로 남았습니다.", a: ", the antagonist left completely alone, regretting everything" }
+        };
+        const SODA_PRE = { mild: ", the antagonist looking sincerely sorry", spicy: ", the antagonist collapsing in humiliation" };
+        function applySoda(r, index, total) {
+            if (sodaLevel === 'normal') return r;
+            if (index === total) { r.narration += SODA_END[sodaLevel].n; r.action += SODA_END[sodaLevel].a; }
+            else if (index === total - 1) { r.action += SODA_PRE[sodaLevel]; }
+            return r;
+        }
+        function renderSodaButtons() {
+            const box = document.getElementById('sodaButtons'); if (!box) return;
+            box.innerHTML = '';
+            Object.keys(SODA_LABELS).forEach(k => {
+                const b = document.createElement('button');
+                b.className = sodaLevel === k ? "px-3 py-2 rounded-2xl bg-rose-700 text-white font-black text-xs shadow-md border-2 border-rose-300" : "px-3 py-2 rounded-2xl bg-white hover:bg-rose-100 text-rose-950 font-black text-xs border-2 border-rose-300";
+                b.innerText = SODA_LABELS[k];
+                b.onclick = () => { sodaLevel = k; renderSodaButtons(); if (currentTopicTitle) updateInterface(); };
+                box.appendChild(b);
+            });
+        }
+
+        // 5. 주인공 빠른 선택
+        const QUICK_CAST = [
+            ["👵 할머니", "elderly Korean grandmother, ~75, gray permed hair, purple cardigan", "할머니"],
+            ["👴 할아버지", "elderly Korean grandfather, ~75, white hair, beige jacket, walking cane", "할아버지"],
+            ["🧑 청년", "young Korean man, ~25, short black hair, navy hoodie", "청년"],
+            ["👩 중년 여성", "calm Korean woman, 40s, black bob hair, white blouse, gray coat", "그녀"],
+            ["👨 중년 남성", "calm Korean man, 40s, short black hair, gray suit", "그"]
+        ];
+        function renderQuickCast() {
+            const box = document.getElementById('castQuick'); if (!box) return;
+            box.innerHTML = '';
+            QUICK_CAST.forEach(q => {
+                const b = document.createElement('button');
+                b.className = "px-3 py-2 rounded-2xl bg-white hover:bg-amber-100 text-amber-950 font-black text-xs border-2 border-amber-400 shadow-sm";
+                b.innerText = q[0];
+                b.onclick = () => { document.getElementById('castP').value = q[1]; protLabel = q[2]; antLabel = (q[2] === '청년') ? '상대' : (currentCategory === 'senior' ? '청년' : '상대'); if (currentTopicTitle) updateInterface(); };
+                box.appendChild(b);
+            });
+        }
+
+        // 4. 캐릭터 시트 저장·불러오기
+        function refreshSavedSelect() {
+            const sel = document.getElementById('castSavedSelect'); if (!sel) return;
+            const all = lsGet('shortsCasts', {});
+            sel.innerHTML = '';
+            const names = Object.keys(all);
+            if (!names.length) { const o = document.createElement('option'); o.value = ''; o.textContent = '(저장된 시트 없음)'; sel.appendChild(o); return; }
+            names.forEach(n => { const o = document.createElement('option'); o.value = n; o.textContent = n; sel.appendChild(o); });
+        }
+        function saveCast() {
+            const name = document.getElementById('castSaveName').value.trim();
+            if (!name) { alert('저장할 이름을 입력해 주세요.'); return; }
+            const v = id => document.getElementById(id).value;
+            const all = lsGet('shortsCasts', {});
+            all[name] = { P: v('castP'), A: v('castA'), S: v('castS'), SET: v('castSet') };
+            lsSet('shortsCasts', all);
+            refreshSavedSelect();
+            document.getElementById('castSavedSelect').value = name;
+            alert('💾 캐릭터 시트가 저장되었습니다: ' + name);
+        }
+        function loadCast() {
+            const name = document.getElementById('castSavedSelect').value;
+            const c = lsGet('shortsCasts', {})[name];
+            if (!c) { alert('불러올 시트가 없습니다.'); return; }
+            document.getElementById('castP').value = c.P; document.getElementById('castA').value = c.A;
+            document.getElementById('castS').value = c.S; document.getElementById('castSet').value = c.SET;
+            if (currentTopicTitle) updateInterface();
+        }
+        function deleteCast() {
+            const name = document.getElementById('castSavedSelect').value;
+            const all = lsGet('shortsCasts', {});
+            if (!name || !all[name]) return;
+            delete all[name]; lsSet('shortsCasts', all); refreshSavedSelect();
+        }
+
+        // 7. 랜덤·즐겨찾기·최근
+        function updateListModeButtons() {
+            [['cat', 'lm-cat'], ['fav', 'lm-fav'], ['recent', 'lm-recent']].forEach(x => {
+                const b = document.getElementById(x[1]); if (!b) return;
+                b.className = "px-3 py-2 rounded-xl border " + (listMode === x[0] ? "bg-blue-600 text-white border-blue-400 shadow-md" : "bg-slate-200 text-slate-800 border-slate-300");
+            });
+        }
+        function setListMode(m) { listMode = m; updateListModeButtons(); renderTopicList(); }
+        function randomTopic() {
+            const items = categoriesData[currentCategory].items;
+            listMode = 'cat'; updateListModeButtons(); renderTopicList();
+            selectTopic(items[Math.floor(Math.random() * items.length)]);
+        }
+        function toggleFav(cat, title) {
+            let favs = lsGet('shortsFav', []);
+            const i = favs.findIndex(f => f.cat === cat && f.title === title);
+            if (i >= 0) favs.splice(i, 1); else favs.unshift({ cat, title });
+            lsSet('shortsFav', favs); renderTopicList();
+        }
+        function pushRecent() {
+            let rec = lsGet('shortsRecent', []).filter(r => !(r.cat === currentCategory && r.title === currentTopicTitle));
+            rec.unshift({ cat: currentCategory, title: currentTopicTitle });
+            lsSet('shortsRecent', rec.slice(0, 15));
+        }
+        function pickEntry(e) {
+            if (e.cat !== currentCategory) switchCategory(e.cat);
+            selectTopic(e.title);
+        }
+
+        // 2·3. 순서대로 복사 + 나레이션 일괄 복사
+        function getAllPrompts() {
+            const arr = [{ name: '표지', text: buildCoverPrompt() }];
+            for (let i = 1; i <= currentScenesCount; i++) {
+                const st = getUniqueDistributedStep(currentCategory, i, currentScenesCount, currentTopicTitle);
+                arr.push({ name: i + '번 씬', text: buildScenePrompt(i, currentScenesCount, st) });
+            }
+            return arr;
+        }
+        function markCopied(idx) { copiedIdx.add(idx); updateInterface(); }
+        function copyNext() {
+            const prompts = getAllPrompts();
+            let i = prompts.findIndex((_, k) => !copiedIdx.has(k));
+            if (i < 0) { copiedIdx = new Set(); i = 0; }
+            copyTextDirect(prompts[i].text, prompts[i].name + ' 프롬프트가 복사되었습니다!');
+            markCopied(i);
+        }
+        function coverNarration(t) { return `모두를 경악게 한 그 이야기, "${t}". 지금 그 서막이 열립니다.`; }
+        function copyAllNarration() {
+            let lines = ['[표지] ' + coverNarration(currentTopicTitle)];
+            for (let i = 1; i <= currentScenesCount; i++) lines.push(`[${i}번 씬] ` + getUniqueDistributedStep(currentCategory, i, currentScenesCount, currentTopicTitle).narration);
+            copyTextDirect(lines.join('\n'), '나레이션 전체가 복사되었습니다!');
+        }
+        function toggleVO() { includeVO = !includeVO; updateInterface(); }
+        function cycleVoStyle() { voStyle = (voStyle + 1) % 3; updateInterface(); }
+        function renderCopyToolbar(container) {
+            const prompts = getAllPrompts();
+            const nextI = prompts.findIndex((_, k) => !copiedIdx.has(k));
+            const bar = document.createElement('div');
+            bar.className = "w-full flex flex-col gap-2 mb-2";
+            const nb = document.createElement('button');
+            nb.className = "w-full bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white text-sm sm:text-base font-black py-4 px-5 rounded-3xl shadow-xl transition";
+            nb.innerText = nextI < 0 ? `✅ 모두 복사 완료 (${prompts.length}/${prompts.length}) · 눌러서 처음부터` : `▶ 다음 복사: ${prompts[nextI].name} (${copiedIdx.size}/${prompts.length} 완료)`;
+            nb.onclick = copyNext;
+            const row = document.createElement('div'); row.className = "flex flex-wrap gap-2";
+            const b1 = document.createElement('button');
+            b1.className = "flex-1 min-w-[140px] bg-amber-500 hover:bg-amber-600 text-slate-950 font-black text-xs sm:text-sm py-3 px-3 rounded-2xl shadow-md";
+            b1.innerText = voMode === 'dialogue' ? "🗣️ 인물 대사 전체 복사" : "🗣️ 나레이션 전체 복사"; b1.onclick = copyAllScript;
+            const b2 = document.createElement('button');
+            b2.className = "flex-1 min-w-[140px] " + (voMode !== 'none' ? "bg-indigo-700 text-white" : "bg-slate-300 text-slate-900") + " font-black text-xs sm:text-sm py-3 px-3 rounded-2xl shadow-md";
+            b2.innerText = "🎭 소리 방식: " + ({ dialogue: "인물 대사", narrator: "나레이터", none: "소리 없음" })[voMode] + " (눌러서 바꾸기)"; b2.onclick = cycleVoMode;
+            const b5 = document.createElement('button');
+            b5.className = "flex-1 min-w-[140px] bg-sky-700 hover:bg-sky-800 text-white font-black text-xs sm:text-sm py-3 px-3 rounded-2xl shadow-md";
+            b5.innerText = "🎙️ 말하기 지시 문구: " + (voStyle + 1) + "/3 (안 나오면 눌러서 바꾸기)"; b5.onclick = cycleVoStyle;
+            const b6 = document.createElement('button');
+            b6.className = "flex-1 min-w-[140px] " + (subOn ? "bg-rose-700 text-white" : "bg-slate-300 text-slate-900") + " font-black text-xs sm:text-sm py-3 px-3 rounded-2xl shadow-md";
+            b6.innerText = "💬 자막 넣기: " + (subOn ? "켬" : "끔") + " (눌러서 바꾸기)"; b6.onclick = toggleSub;
+            const b7 = document.createElement('button');
+            b7.className = "flex-1 min-w-[140px] bg-rose-500 hover:bg-rose-600 text-white font-black text-xs sm:text-sm py-3 px-3 rounded-2xl shadow-md";
+            b7.innerText = "📝 자막 파일(SRT) 복사"; b7.onclick = copySrt;
+            const sec = document.createElement('label');
+            sec.className = "flex items-center gap-2 bg-white border-2 border-rose-300 rounded-2xl px-3 py-2 text-xs sm:text-sm font-black text-slate-900";
+            sec.innerHTML = '장면 1개 길이(초) <input type="number" min="3" max="30" value="' + clipSec + '" oninput="setClipSec(this.value)" class="w-16 p-1 border-2 border-rose-300 rounded-lg text-slate-950">';
+            const b3 = document.createElement('button');
+            b3.className = "bg-slate-200 text-slate-900 font-black text-xs sm:text-sm py-3 px-3 rounded-2xl shadow-md";
+            b3.innerText = "↺ 체크 초기화"; b3.onclick = () => { copiedIdx = new Set(); updateInterface(); };
+            const b4 = document.createElement('button');
+            b4.className = "flex-1 min-w-[140px] bg-fuchsia-700 hover:bg-fuchsia-800 text-white font-black text-xs sm:text-sm py-3 px-3 rounded-2xl shadow-md";
+            b4.innerText = "🖼️ 캐릭터 기준 이미지 프롬프트"; b4.onclick = () => copyTextDirect(buildRefPrompt(), '캐릭터 기준 이미지 프롬프트가 복사되었습니다!');
+            const tip = document.createElement('div');
+            tip.className = "text-xs font-black text-slate-700 bg-white border-2 border-fuchsia-300 rounded-2xl p-3";
+            tip.innerText = "💡 인물을 더 똑같이 유지하려면: ① 위 🖼️ 버튼으로 인물 기준 이미지를 먼저 만들고 ② 각 씬을 만들 때 그 이미지를 함께 첨부하세요. (프롬프트 창의 + 버튼)";
+            row.appendChild(b1); row.appendChild(b2); row.appendChild(b5); row.appendChild(b6); row.appendChild(b7); row.appendChild(sec); row.appendChild(b4); row.appendChild(b3);
+            bar.appendChild(nb); bar.appendChild(row); bar.appendChild(tip);
+            container.appendChild(bar);
+        }
+
+        // 1. 유튜브 업로드 세트
+        let uploadItems = [];
+        function buildUploadSet() {
+            const t = currentTopicTitle, cat = currentCategory;
+            const sh = (x, n) => x.length > n ? x.slice(0, n - 1) + '…' : x;
+            const THUMBS = [["그 순간 모두 얼어붙었다", "정체를 알고 소름"], ["증거가 나오자 끝났다", "녹화본 공개"], ["영상 퍼지자 난리났다", "박제당한 최후"], ["규정 한 줄에 무너졌다", "법대로 처리"], ["돌고 돌아 만났다", "인과응보 정석"], ["따뜻한 마음이 돌아왔다", "눈물 나는 반전"]];
+            const story = true;
+            const thumb = story ? THUMBS[pickCheolgukType(t)] : ["결말이 충격적이다", "끝까지 보세요"];
+            const tags = ['#shorts', '#쇼츠', '#사이다', '#반전', '#통쾌'];
+            if (cat === 'cheolguk') tags.push('#참교육', '#인과응보');
+            else if (cat === 'senior') tags.push('#시니어', '#키오스크', '#어르신', '#디지털');
+            else tags.push('#이야기');
+            if (CHEOLGUK_CLASSIC_SET.has(t)) tags.push('#전래동화', '#고전', '#옛이야기');
+            const first = getUniqueDistributedStep(cat, 1, currentScenesCount, t).narration;
+            const last = getUniqueDistributedStep(cat, currentScenesCount, currentScenesCount, t).narration;
+            const desc = `${first}\n\n${last}\n\n구독과 좋아요는 큰 힘이 됩니다 🙏\n※ 이 영상은 창작된 이야기로, 실제 인물·사건과 무관합니다.\n\n${tags.join(' ')}`;
+            return [
+                { label: '제목 후보 1', text: `[사이다] ${sh(t, 40)}` },
+                { label: '제목 후보 2', text: `${sh(t, 34)}… 끝까지 보면 소름 #shorts` },
+                { label: '제목 후보 3', text: `결말이 통쾌합니다 | ${sh(t, 30)}` },
+                { label: '썸네일 문구', text: thumb.join('\n') },
+                { label: '설명란', text: desc },
+                { label: '해시태그', text: tags.join(' ') }
+            ];
+        }
+        function copyUpload(i) { copyTextDirect(uploadItems[i].text, uploadItems[i].label + ' 복사되었습니다!'); }
+        function copyUploadAll() { copyTextDirect(uploadItems.map(x => '■ ' + x.label + '\n' + x.text).join('\n\n'), '업로드 세트 전체가 복사되었습니다!'); }
+        function renderUploadSet() {
+            const box = document.getElementById('uploadSetContainer'); if (!box) return;
+            box.innerHTML = '';
+            if (!currentTopicTitle) return;
+            uploadItems = buildUploadSet();
+            const wrap = document.createElement('div');
+            wrap.className = "border-4 border-emerald-500 bg-emerald-50 rounded-3xl p-5 shadow-xl space-y-3 card-box my-6";
+            const h = document.createElement('div');
+            h.className = "flex justify-between items-center gap-2 flex-wrap";
+            h.innerHTML = '<span class="text-base sm:text-lg font-black text-emerald-950">📺 유튜브 업로드 세트 (제목·썸네일·설명·해시태그)</span>';
+            const all = document.createElement('button');
+            all.className = "bg-emerald-700 text-white font-black text-xs px-3 py-2 rounded-xl shadow";
+            all.innerText = "📋 전체 복사"; all.onclick = copyUploadAll;
+            h.appendChild(all); wrap.appendChild(h);
+            uploadItems.forEach((it, i) => {
+                const row = document.createElement('div'); row.className = "bg-white border-2 border-emerald-300 rounded-2xl p-3 flex gap-2 items-start";
+                const col = document.createElement('div'); col.className = "flex-1 text-sm font-black text-slate-950 whitespace-pre-wrap break-words";
+                const lab = document.createElement('div'); lab.className = "text-xs text-emerald-800 mb-1"; lab.textContent = it.label;
+                const txt = document.createElement('div'); txt.textContent = it.text;
+                col.appendChild(lab); col.appendChild(txt);
+                const b = document.createElement('button'); b.className = "bg-emerald-600 text-white font-black text-xs px-3 py-2 rounded-xl shrink-0";
+                b.innerText = "복사"; b.onclick = () => copyUpload(i);
+                row.appendChild(col); row.appendChild(b); wrap.appendChild(row);
+            });
+            box.appendChild(wrap);
+        }
+        // ===== BGM 분위기 → 프롬프트 음악 지시 =====
+        const BGM_EN = {
+            '긴장감 넘치는 스릴러풍': 'tense suspenseful thriller score',
+            '통쾌한 사이다 리듬': 'upbeat triumphant rhythmic score',
+            '구슬픈 통기타 선율': 'sad melancholic acoustic guitar melody',
+            '따스한 감성 발라드': 'warm gentle emotional ballad'
+        };
+        function bgmEn() { return BGM_EN[currentBgm] || BGM_EN['긴장감 넘치는 스릴러풍']; }
+        // ===== 주제 → 줄거리 카드 (장소·인물·반전 자동 추출) =====
+        const PLACE_RULES = [
+            [/키오스크|무인 주문|셀프 주문/, "a Korean fast-food restaurant with a self-order kiosk"],
+            [/무인 카페/, "an unmanned Korean cafe with an order kiosk"],
+            [/카페|커피/, "a Korean cafe"],
+            [/백화점/, "a Korean department store"],
+            [/셀프 계산대|무인 계산대|마트/, "a Korean supermarket self-checkout"],
+            [/편의점|무인 점포|무인 매장|무인 아이스크림/, "an unmanned Korean convenience store"],
+            [/은행|ATM|보이스피싱/, "a Korean bank lobby with an ATM"],
+            [/병원|접수기|의사/, "a Korean hospital reception"],
+            [/약국/, "a Korean pharmacy"],
+            [/지하철|발권|기차|열차|승차권|매표소/, "a Korean train station ticket machine"],
+            [/버스|정류장/, "inside a Korean bus"],
+            [/택시/, "inside a Korean taxi"],
+            [/공항|체크인/, "a Korean airport check-in area"],
+            [/호텔|숙소|숙박/, "a Korean hotel lobby"],
+            [/영화관|극장/, "a Korean movie theater lobby"],
+            [/도서관/, "a Korean library"],
+            [/주민센터|구청|민원|발급기/, "a Korean community center counter"],
+            [/엘리베이터|입주민|아파트|층간|관리소/, "a Korean apartment complex"],
+            [/주차|정산기/, "a Korean parking lot with a payment machine"],
+            [/헬스장/, "a Korean gym"],
+            [/학교|학원|교사|학부모|시험|교수|학생/, "a Korean school"],
+            [/동창회/, "a Korean reunion party in a restaurant"],
+            [/면접|회사|팀장|부장|상사|인턴|신입|선배|후배|동료|직장|회식/, "a Korean office"],
+            [/시댁|며느리|시어머니|결혼식/, "a Korean family gathering"],
+            [/시장|노점|상인/, "a Korean traditional market"],
+            [/세탁/, "a Korean unmanned laundromat"],
+            [/주유/, "a Korean gas station"],
+            [/식당|고깃집|음식점|배달|주문/, "a Korean restaurant"],
+            [/도로|운전|블랙박스|접촉사고|보복/, "a Korean road"],
+            [/전세|집주인|건물주|임대|보증금|이삿짐|이웃/, "a Korean apartment building"],
+            [/통신|요금제|스마트폰|판매점|단말기|휴대폰/, "a Korean mobile phone shop"],
+            [/캠핑|해수욕장|공원|놀이터|골프/, "a Korean outdoor park"]
+        ];
+        const TWIST_RULES = [
+            [/회장/, "the company chairman"], [/대표|창업|설립자/, "the company founder and CEO"], [/사장|점주|본점/, "the store owner"],
+            [/건물주|건물 주인|소유주|집주인/, "the building owner"], [/면접관|면접/, "the job interviewer"], [/판사/, "a retired judge"],
+            [/의사|병원장|원장/, "a senior doctor"], [/교수/, "a professor"], [/작가/, "a famous author"],
+            [/임원|이사|지점장|국장|구청장|은행장|사장님/, "a senior executive"], [/감사|감독관|감찰/, "an inspector"], [/경찰|검사/, "a police officer"],
+            [/CCTV|블랙박스|영상|카메라|녹음|녹취|통화|캡처|영수증|기록|로그|문자|메신저|채팅|내역|증거/, "the recorded evidence (video or phone screen)"],
+            [/박제|확산|폭로|후기|댓글|SNS|단톡/, "the video spreading online"],
+            [/민원|약관|규정|조항|신고|환불|철회|시정|철퇴|과태료|기준/, "the official rule or complaint decision"]
+        ];
+        PLACE_RULES.splice(0, 0,
+            [/QR|메뉴판|웨이터|소개팅/, "a Korean restaurant"], [/응급실/, "a Korean hospital reception"], [/기내/, "inside a Korean airplane cabin"],
+            [/공연장/, "a Korean concert hall lobby"], [/딜러/, "a Korean car dealership"], [/세차/, "a Korean car wash"], [/사진관/, "a Korean photo studio"]);
+        PLACE_RULES.push(
+            [/동창/, "a Korean reunion party in a restaurant"], [/지자체|강좌|디지털 교육/, "a Korean community center counter"],
+            [/하청|상무|해고|퇴직금|월급|급여|수당|근로|근무|계약|원청|제작사|의뢰인|스톡옵션|공정위|가맹|본사|프랜차이즈|입찰|대금|거래처|인사|승진|보고|오너|제조사|감독|배우/, "a Korean office"],
+            [/가게|고객|업체|업주|환불|점장|단골|점원|점주|직원|판매원|청약|매물|중개/, "a Korean small shop"],
+            [/택배|현관|견주|쓰레기|투기|게시판|동네|킥보드|자전거/, "a Korean residential street"],
+            [/쇼핑몰|온라인|스미싱|카톡|문자|앱|폰|구독|결제|개인정보|유튜버|인플루언서|영상 편집|보안/, "a Korean living room, using a smartphone"],
+            [/손녀|손주|가족|유산|형제|사촌|부모|아이/, "a Korean family home"], [/보험/, "a Korean insurance office"]);
+        TWIST_RULES.push(
+            [/정체|출신|전문가|개발자|대주주|약사|디자이너|사진작가|어머니|승무원|아버지/, "the protagonist's hidden identity is revealed (an important or expert person)"],
+            [/은인|보답|선물|장학금|특채|용돈|유산|합격|입사/, "the protagonist's kindness is rewarded"],
+            [/부메랑|인과응보|후회|몰락|최후|패배|파산|탈락|역전|낭패|마지막/, "karma: the antagonist faces the consequence of his own actions"]);
+        const BAD_VERB = /무시|재촉|비웃|놀린|막말|쫓아|핀잔|새치기|소리|짜증|갑질|바가지|사기|몰아세|얕보|조롱|구박|괴롭|외면|뒤진|밀친|가로챈|훔친|속인|거부|떼먹|강요|눈치/;
+        const ANTAG_RULES = [
+            [/청년|학생|젊은|손주|아들/, "young Korean man, ~25, black hoodie, backpack"],
+            [/직원|점원|판매원|알바생|기사/, "Korean staff member, 30s, plain uniform"],
+            [/손님|진상|승객|운전자|입주민|이웃|보호자|관객/, "rude Korean man, 50s, flashy jacket"],
+            [/선배|상사|팀장|부장|후배|동료|대리/, "arrogant Korean office worker, 40s, dark suit"],
+            [/사장|점장|원장|집주인|건물주|업체|판매점|점주/, "stern Korean business owner, 50s, vest"]
+        ];
+        function splitTitle(t) { const i = t.indexOf(','); return i > 0 ? [t.slice(0, i).trim(), t.slice(i + 1).trim()] : [t.trim(), '']; }
+        function firstRule(rules, text) { for (const r of rules) if (r[0].test(text)) return r[1]; return ''; }
+        function deriveCard(topic) {
+            const [setup, twistKo] = splitTitle(topic);
+            const card = { place: firstRule(PLACE_RULES, topic), twist: firstRule(TWIST_RULES, twistKo || topic.slice(-14)) || firstRule(TWIST_RULES, topic), P: '', A: '', S: '' };
+            if (/할머니/.test(setup)) card.P = "elderly Korean grandmother, ~75, gray permed hair, purple cardigan";
+            else if (/할아버지|노신사/.test(setup)) card.P = "elderly Korean grandfather, ~75, white hair, beige jacket, walking cane";
+            else if (/노인|어르신/.test(setup)) card.P = currentCategory === 'senior' ? "elderly Korean grandmother, ~75, gray permed hair, purple cardigan" : "elderly Korean grandfather, ~75, white hair, beige jacket, walking cane";
+            const vm = BAD_VERB.exec(setup);
+            if (vm) {
+                const after = setup.slice(vm.index, vm.index + 14), before = setup.slice(0, vm.index);
+                card.A = firstRule(ANTAG_RULES, after) || firstRule(ANTAG_RULES, before);
+            }
+            card.S = /키오스크|카페|편의점|마트|식당/.test(topic) ? "red-uniform staff and two customers" : "two or three bystanders in everyday clothes";
+            return card;
+        }
+        function topicify(r, index, total, topic) {
+            if (CHEOLGUK_CLASSIC_SET.has(topic)) return r;
+            const [setup, twist] = isOtherCat() ? [splitBM(topic).base, ''] : splitTitle(topic);
+            const pos = index === total ? -1 : Math.floor((index - 1) * 6 / (total - 1));
+            const tw = ((document.getElementById('castT') || {}).value || '').trim();
+            if (pos === 0) { r.action += `; the situation: "${setup}"`; r.narration = `${setup}. 이야기는 바로 여기서 시작됩니다.`; }
+            if ((pos === 3 || pos === 4) && tw) r.action += `; the reveal: ${tw}`;
+            if (pos === 4 && twist) r.narration = `그리고 밝혀진 반전, ${twist}. ` + r.narration;
+            return r;
+        }
+        function angerify(r, index, total, topic) {
+            if (index === total || pickCheolgukType(topic) === 5) return r;
+            const pos = Math.floor((index - 1) * 6 / (total - 1));
+            if (pos === 0) r.action += ", with the antagonist standing right nearby, looking on impatiently";
+            if (pos === 1 && /antagonist/.test(r.character)) r.action += ", with an angry furrowed-brow face, glaring and scolding irritably";
+            return r;
+        }
+        // ===== /줄거리 카드 =====
+        // ===== 인물 호칭·역할 통일 =====
+        let protLabel = '주인공', antLabel = '상대';
+        function hasBatchim(w) { const c = w.charCodeAt(w.length - 1); return c >= 0xAC00 && c <= 0xD7A3 && ((c - 0xAC00) % 28) !== 0; }
+        function fixJosa(label, j) {
+            if (!j) return label;
+            const b = hasBatchim(label);
+            const map = { '은': b ? '은' : '는', '는': b ? '은' : '는', '이': b ? '이' : '가', '가': b ? '이' : '가', '을': b ? '을' : '를', '를': b ? '을' : '를', '와': b ? '과' : '와', '과': b ? '과' : '와' };
+            return label + (map[j] || j);
+        }
+        function roleLabel(c) {
+            const head = c.split(' ').slice(0, 5).join(' ');
+            if (/two korean people/i.test(c)) return 'the protagonist and the antagonist';
+            if (/runners|inspector|magistrate|onlookers|villagers|bystanders|officers|officials|police|smartphone|staff/i.test(head)) return 'the extras';
+            const P = /protagonist|\bhumble\b|\bkind\b|\bcalm\b|wronged|polite|steady/i.test(c);
+            const A = /offender|accuser|landlord|arrogant|\bloud\b|\brude\b|antagonist|\bpale\b|trembling|sweating|worried|humbled|regretful|defeated/i.test(c);
+            if (P && A) return 'the protagonist and the antagonist';
+            if (A) return 'the antagonist';
+            if (P) return 'the protagonist';
+            return 'the extras';
+        }
+        function roleify(r) {
+            r.character = roleLabel(r.character);
+            r.action = r.action.replace(/the (offender|accuser|landlord)\b/gi, 'the antagonist').replace(/the humble (person|man)\b/gi, 'the protagonist');
+            r.narration = r.narration.replace(/(주인공|상대)(은|는|이|가|을|를|와|과)?/g, (m0, w, j) => fixJosa(w === '주인공' ? protLabel : antLabel, j));
+            return r;
+        }
+        // ===== /인물 호칭·역할 통일 =====
+
+        // ===== 인물 대사 모드 (영상 속 인물이 상황에 맞게 말함) =====
+        let voMode = 'dialogue';
+        const DLG_ROLES = [['P','A','P','S','A','A','P'], ['P','A','P','S','A','S','P'], ['P','A','S','S','A','A','P'], ['P','A','P','P','S','A','P'], ['P','A','A','P','A','A','P']];
+        const ROLE_EN = { P: 'the protagonist', A: 'the antagonist', S: 'a supporting character from the extras' };
+        const ROLE_KO = { P: '주인공', A: '상대', S: '주변 인물' };
+        const DLG_MODERN = [
+            ["잠시만요, 금방 하겠습니다.", "아니, 이것도 못 하세요?! 눈치도 없으시네요!", "여보세요, 지금 이쪽으로 와 주시겠어요?", "{T}, 오셨습니까! 여기까지 어쩐 일이십니까?", "네? {T}이셨다고요…? 저, 저는 몰랐습니다.", "정말 죄송합니다! 제가 큰 실수를 했습니다.", "사람을 겉모습으로 판단하지 마세요."],
+            ["저는 잘못한 게 없습니다.", "증거 있어요?! 없으면 입 다무세요, 어디서 거짓말이에요!", "네, 여기 있습니다. 한번 보시죠.", "화면을 보시면 모든 게 찍혀 있네요.", "아… 그, 그건 오해입니다.", "사실이 확인됐습니다. 책임을 지셔야 합니다.", "기록은 거짓말을 하지 않습니다."],
+            ["저기요, 그만하세요. 여기는 공공장소예요.", "내가 뭘 잘못했다고 그래요?! 당신이 뭔데 훈계예요!", "지금 다 촬영하고 있어요.", "이 영상, 벌써 조회수가 엄청나요!", "전화가 계속 오는데… 어떡하죠?", "여러분께 진심으로 사과드립니다.", "이제 됐습니다. 모두 고맙습니다."],
+            ["이 요구는 규정에 어긋납니다.", "내가 시키는 대로 하라고 했잖아요! 말이 많아요!", "계약서 조항부터 확인해 보겠습니다.", "여기 이 조항을 보세요. 분명히 이렇게 적혀 있습니다.", "접수된 내용을 바탕으로 조사하겠습니다.", "제가 잘못 알고 있었습니다.", "원칙은 모두에게 똑같이 적용됩니다."],
+            ["저는 괜찮습니다. 천천히 하겠습니다.", "참 답답하네요! 이런 것도 못 하세요? 한심하게!", "오늘 정말 중요한 날인데… 잘돼야 할 텐데.", "그날 있었던 일, 기억하시나요?", "아… 그때 그분이셨군요.", "죄송합니다. 제가 그때 큰 실수를 했습니다.", "누구에게나 예의를 지키는 게 중요합니다."]
+        ];
+        const DLG_CLASSIC = [
+            ["나리, 길 가는 나그네입니다. 잠시 쉬어 가게 해 주십시오.", "어디서 굴러온 거지가 감히! 썩 물러가라!", "잠깐, 이것을 보시오.", "어사또 출두요! 모두 엎드리시오!", "으, 으악! 어사또셨습니까…", "살려 주십시오, 어사또! 잘못했습니다!", "사람은 겉모습으로 판단하는 것이 아니오."],
+            ["소인은 억울합니다. 죄가 없습니다!", "증거를 대 보아라, 증거를!", "여기 이 물건이 증거입니다.", "허허, 이것을 보니 사실이 분명하구나.", "아, 아닙니다! 그건 오해입니다!", "여봐라, 이자를 끌고 가거라!", "진실은 반드시 밝혀지는 법이옵니다."],
+            ["이보시오, 그만하시오. 사람들이 보고 있소.", "내가 무엇을 잘못했단 말이냐!", "저 사람, 아까 그 일을 다 봤어요.", "장터에 벌써 소문이 쫙 퍼졌답니다!", "어딜 가도 수군거리니 얼굴을 못 들겠구나.", "마을 어르신들, 제가 잘못했습니다.", "뿌린 대로 거두는 법이지요."],
+            ["나리, 그 분부는 법도에 어긋나옵니다.", "내 말이 곧 법이다! 시키는 대로 해라!", "장부와 문서를 다시 살펴보겠습니다.", "여기 이 기록을 보십시오. 분명히 이리 적혀 있사옵니다.", "암행 감사가 출두했으니 조사를 시작하겠소.", "제, 제가 잘못 알고 있었습니다…", "법도 앞에서는 누구도 예외가 없사옵니다."],
+            ["소인은 괜찮습니다. 가던 길 가겠습니다.", "참으로 천한 것이 말이 많구나!", "아이고, 이 큰일을 어찌하면 좋단 말인가…", "그날 길에서 만났던 그 사람이 바로 나요.", "아… 그때 그분이셨구려…", "그때 제가 큰 잘못을 했습니다. 용서하십시오.", "남에게 베푼 예의는 결국 나에게 돌아오는 법이오."]
+        ];
+        const TITLE_KO_RULES = [[/chairman/, '회장님'], [/founder|CEO/, '대표님'], [/store owner/, '사장님'], [/building owner/, '건물주님'], [/interviewer/, '면접관님'], [/judge/, '판사님'], [/doctor/, '선생님'], [/professor/, '교수님'], [/author/, '작가님'], [/executive/, '이사님'], [/inspector/, '감사관님'], [/police/, '경찰관님']];
+        // 상황별(장소·기계) 첫 대사 — 주제 키워드로 고름
+        const DLG_KIND = [
+            [/동창|시댁|며느리|가족|결혼식/, "오랜만에 뵙네요. 잘 지내셨어요?", "아직도 그 모양이에요? 정말 한심하네요."],
+            [/키오스크|무인 주문|셀프 주문|주문기|발급기|발권|정산기|접수기|충전기|체크인/, "키오스크는 처음이라 서툴러서요. 천천히 해 볼게요.", "아니, 이것도 못 하세요?! 뒤에 줄 서 있는 거 안 보이세요?"],
+            [/ATM|은행|송금|결제|계산대|앱/, "이 기계가 익숙하지 않아서요. 잠시만 기다려 주세요.", "아유, 정말 답답하네요! 다른 사람 기다리는 건 생각도 안 하세요?"],
+            [/병원|접수|약국/, "접수를 어떻게 하는지 몰라서요. 알려 주시겠어요?", "아니, 안내문에 다 써 있잖아요! 읽어 보지도 않고 물어보세요?"],
+            [/택시|버스|지하철|기차|열차|공항|역/, "표를 어떻게 끊는지 잘 몰라서요.", "아, 진짜! 시간 없는데 왜 이렇게 오래 걸려요? 좀 비켜요!"],
+            [/회사|면접|팀장|부장|선배|신입|인턴|상사|동료|후배/, "제가 맡은 일은 최선을 다해 하겠습니다.", "이 정도도 못 합니까?! 대체 일을 어떻게 배운 겁니까!"],
+            [/아파트|이웃|층간|입주민/, "밤에 소음이 있어서 말씀드리러 왔습니다.", "아니, 그 정도 소리도 못 참아요? 예민하게 굴지 마세요!"],
+            [/식당|카페|음식점|고깃집|주문|배달|QR/, "주문을 어떻게 하는지 잘 몰라서요.", "아니, 주문 하나 못 해요? 뒤에 사람들 기다리는 거 안 보여요?!"],
+            [/가게|편의점|마트|매장|판매|환불/, "이 물건을 환불하고 싶은데요.", "환불은 안 된다고 했잖아요! 같은 말을 몇 번이나 해야 합니까!"],
+            [/학교|학원|학생|교수|시험|학부모/, "아이 일로 상담드리러 왔습니다.", "저는 아무 잘못 없다니까요! 왜 자꾸 저한테 그러세요!"],
+            [/쇼핑몰|온라인|스미싱|카톡|문자|폰/, "이 문자가 이상해서 확인하고 싶어요.", "그냥 누르면 된다니까요! 이것도 몰라요? 답답하네!"]
+        ];
+        // 그 외 카테고리(드라마·일상·야담·민담·동화·설화) 7단계 대사
+        const DLG_OTHER = {
+            drama: ["오늘은 꼭 사실대로 말씀드려야겠어요.", "그게 무슨 말씀이세요? 설명해 주세요.", "저도 숨기고 싶지 않았습니다. 다 말씀드릴게요.", "그럼 지금까지 저를 속이신 거예요?", "저도 힘들었습니다. 이제는 믿어 주세요.", "두 분 다 이제 그만 진정하세요.", "이제야 모든 진실이 밝혀졌네요."],
+            daily: ["오늘은 날씨가 참 좋네요.", "그러게요, 이런 날은 어디라도 가고 싶어요.", "그럼 우리 같이 다녀올까요?", "어머, 정말요? 저도 같이 가고 싶었어요.", "자, 준비하고 나가 볼까요?", "다들 모였네요. 즐거운 하루 보내요.", "오늘 하루도 참 행복했어요."],
+            yadam: ["나리, 소인에게 하실 말씀이 있으시다고요?", "그렇소. 이 일을 그냥 넘길 수는 없소.", "소인이 한 일이 아니옵니다. 믿어 주십시오.", "그렇다면 어찌 된 일인지 낱낱이 고하여라.", "사실은 이러하옵니다. 모두 말씀드리겠습니다.", "허허, 이제야 사정을 알겠구나.", "세상 일은 결국 바른 대로 돌아가는 법이오."],
+            mindam: ["이 늙은이 말을 한번 들어 보게나.", "할머니, 그게 정말이에요?", "암, 정말이고말고. 내 눈으로 똑똑히 보았다네.", "그럼 우리가 어찌하면 좋겠습니까?", "마음을 바르게 먹고 도우면 복이 오는 법이지.", "아이고, 고맙습니다. 이 은혜를 잊지 않겠습니다.", "착한 마음은 언젠가 반드시 복이 되어 돌아온단다."],
+            fairytale: ["안녕! 오늘은 어디로 모험을 떠날까?", "저기 숲속에 반짝이는 길이 보여!", "무섭지만… 우리 함께라면 괜찮을 거야.", "도와줘서 고마워! 너희가 없었다면 큰일 날 뻔했어.", "친구들아, 힘을 합치면 뭐든 할 수 있어!", "와, 정말 신나는 모험이었어!", "서로 돕고 아끼면 모두가 행복해진단다."],
+            seolhwa: ["옛날 옛적에, 이 마을에 신비한 일이 있었다네.", "이상한 기운이 느껴지는구려. 가 보아야겠소.", "이곳에 오래된 약속이 숨어 있다고 들었소.", "그 약속을 어기면 큰 화가 닥친다 하였소.", "내 마음이 바르니 두려울 것이 없소이다.", "이제 신비로운 힘이 모두를 감싸는구나.", "이 이야기는 오늘까지도 전해 내려온다오."]
+        };
+        const DLG_ROLES_OTHER = ['P', 'A', 'P', 'A', 'P', 'S', 'P'];
+        const ROLE_EN_OTHER = { P: 'the main character', A: 'the second character', S: 'a bystander' };
+        const DLG_CONNECT = ["그리고요, ", "그런데, ", "그래서요, ", "저기, "];
+        function getDialogue(index, total, topic) {
+            const pos = index === total ? 6 : Math.floor((index - 1) * 6 / (total - 1));
+            const first = index === total ? index : Math.floor((pos * (total - 1) + 5) / 6) + 1;
+            const k = index === total ? 0 : (index - first);
+            let role, line, roleEn, ko;
+            if (false) {
+                role = DLG_ROLES_OTHER[pos]; line = (DLG_OTHER[currentCategory] || DLG_OTHER.drama)[pos]; roleEn = ROLE_EN_OTHER[role];
+            } else {
+                const ty = pickCheolgukType(topic);
+                const classic = isClassicTopic(topic);
+                role = DLG_ROLES[ty][pos];
+                line = (classic ? DLG_CLASSIC : DLG_MODERN)[ty][pos];
+                let kindHit = false;
+                if (!classic && (ty === 0 || ty === 4) && (pos === 0 || pos === 1)) {
+                    for (const r of DLG_KIND) if (r[0].test(splitTitle(topic)[0])) { line = pos === 0 ? r[1] : r[2]; kindHit = true; break; }
+                }
+                if (!kindHit && currentCategory === 'senior' && pos === 1 && (ty === 0 || ty === 4)) line = "아니, 이것도 못 하세요?! 뒤에 사람들 기다리는 거 안 보여요?!";
+                if (index === total && sodaLevel === 'mild') { role = 'P'; line = classic ? "진심이 느껴지는구려. 앞으로는 조심하시오." : "진심이 느껴지네요. 다음부턴 조심해 주세요."; }
+                if (index === total && sodaLevel === 'spicy') { role = 'A'; line = classic ? "…내가 모든 것을 잃었구나." : "…내가 전부 잃었구나."; }
+                const tw = ((document.getElementById('castT') || {}).value || '');
+                let title = '대표님';
+                for (const r of TITLE_KO_RULES) if (r[0].test(tw)) { title = r[1]; break; }
+                line = line.replace(/\{T\}/g, title);
+                roleEn = ROLE_EN[role];
+            }
+            ko = ROLE_KO[role];
+            if (k > 0) line = DLG_CONNECT[(k - 1) % DLG_CONNECT.length] + line;
+            return { role: roleEn, ko, line, key: role, angry: role === 'A' && pos === 1 && pickCheolgukType(topic) !== 5 };
+        }
+        function dlgText(i, total) {
+            const d = getDialogue(i, total, currentTopicTitle);
+            const tone = d.angry ? ' angrily, with an irritated glare' : '';
+            return [`${d.role} says${tone} in Korean: "${d.line}" `, `${d.role} speaks Korean${tone}: "${d.line}" `, `${d.role}${d.angry ? ' (angry)' : ''}: "${d.line}" `][voStyle];
+        }
+        function subLine(i) {
+            if (voMode === 'dialogue') { const d = getDialogue(i, currentScenesCount, currentTopicTitle); return `대사(${d.ko}): "${d.line}"`; }
+            return `나레이션: "${getUniqueDistributedStep(currentCategory, i, currentScenesCount, currentTopicTitle).narration}"`;
+        }
+        function setVoMode(m) { voMode = m; includeVO = (m === 'narrator'); updateInterface(); }
+        function cycleVoMode() { setVoMode({ dialogue: 'narrator', narrator: 'none', none: 'dialogue' }[voMode]); }
+        function copyAllScript() {
+            if (voMode !== 'dialogue') { copyAllNarration(); return; }
+            const lines = [];
+            for (let i = 1; i <= currentScenesCount; i++) { const d = getDialogue(i, currentScenesCount, currentTopicTitle); lines.push(`[${i}번 씬] (${d.ko}) ${d.line}`); }
+            copyTextDirect(lines.join('\n'), '인물 대사 전체가 복사되었습니다!');
+        }
+        // ===== 자막 (영상에 넣기 + SRT 자막 대본) =====
+        function subActive() { return subOn && voMode !== 'none'; }
+        function toggleSub() { subOn = !subOn; updateInterface(); }
+        function setClipSec(v) { const n = Number(v); clipSec = (n >= 3 && n <= 30) ? n : 8; }
+        function srtTime(t) {
+            const ms = Math.round(t * 1000), p = (x, n) => String(x).padStart(n, '0');
+            return `${p(Math.floor(ms / 3600000), 2)}:${p(Math.floor(ms % 3600000 / 60000), 2)}:${p(Math.floor(ms % 60000 / 1000), 2)},${p(ms % 1000, 3)}`;
+        }
+        function buildSrt() {
+            const cues = [coverNarration(currentTopicTitle)];
+            for (let i = 1; i <= currentScenesCount; i++) {
+                cues.push(voMode === 'dialogue' ? getDialogue(i, currentScenesCount, currentTopicTitle).line
+                    : getUniqueDistributedStep(currentCategory, i, currentScenesCount, currentTopicTitle).narration);
+            }
+            return cues.map((t, i) => `${i + 1}\n${srtTime(i * clipSec + 0.3)} --> ${srtTime((i + 1) * clipSec - 0.3)}\n${t}\n`).join('\n');
+        }
+        function copySrt() { copyTextDirect(buildSrt(), 'SRT 자막 대본이 복사되었습니다! 메모장에 붙여 넣고 .srt로 저장하세요.'); }
+        // ===== /자막 =====
+
+        // 6번째 이야기: 따뜻한 마음이 돌아오는 이야기 (복수가 아닌 분위기의 주제용)
+        CHEOLGUK_TOP5.push({ name: "6위 따뜻한 마음이 돌아오는 이야기", beats: [
+            { c: "A kind Korean protagonist", a: "living a calm everyday moment", n: t => `"${t}" 이야기는 평범하고 조용한 하루에서 시작됩니다.` },
+            { c: "A Korean bystander in trouble", a: "a small trouble suddenly happening nearby", n: t => "그런데 가까운 곳에서 작은 일이 벌어집니다." },
+            { c: "The kind protagonist", a: "gently reaching out to help without hesitation", n: t => "주인공은 망설이지 않고 따뜻하게 손을 내밉니다." },
+            { c: "Korean bystanders smiling", a: "looking relieved and grateful", n: t => "도움을 받은 이의 얼굴이 환하게 밝아집니다." },
+            { c: "The kind protagonist", a: "sharing a warm moment with the bystanders", n: t => "두 사람은 서로의 마음을 나누며 가까워집니다." },
+            { c: "The kind protagonist", a: "receiving a surprising heartwarming gift of thanks", n: t => "그리고 뜻밖의 보답이 따뜻하게 돌아옵니다." }
+        ], end: { c: "The calm protagonist", a: "walking home with a gentle smile as the warm light fades", n: t => `"${t}" 이야기, 따뜻한 마음은 언젠가 반드시 돌아온다는 걸 보여줍니다.` } });
+        CHEOLGUK_CLASSIC.push({ beats: [
+            { c: "A kind Korean protagonist in hanbok", a: "living a calm everyday moment in a Joseon village", n: t => `"${t}" 이야기는 평온한 하루에서 시작됩니다.` },
+            { c: "A Korean villager in hanbok in trouble", a: "a small trouble suddenly happening nearby", n: t => "그런데 가까운 곳에서 작은 일이 벌어집니다." },
+            { c: "The kind protagonist in hanbok", a: "gently reaching out to help without hesitation", n: t => "주인공은 망설이지 않고 따뜻하게 손을 내밉니다." },
+            { c: "Korean villagers in hanbok smiling", a: "looking relieved and grateful", n: t => "도움을 받은 이의 얼굴이 환하게 밝아집니다." },
+            { c: "The kind protagonist in hanbok", a: "sharing a warm moment with the villagers", n: t => "서로의 마음을 나누며 가까워집니다." },
+            { c: "The kind protagonist in hanbok", a: "receiving a surprising heartwarming gift of thanks", n: t => "그리고 뜻밖의 보답이 따뜻하게 돌아옵니다." }
+        ], end: { c: "The calm protagonist in hanbok", a: "walking home with a gentle smile as the warm sunset fades", n: t => `"${t}" 이야기, 베푼 마음은 언젠가 반드시 돌아온다는 옛 교훈을 전합니다.` } });
+        DLG_ROLES.push(['P', 'S', 'P', 'S', 'P', 'S', 'P']);
+        DLG_MODERN.push(["오늘도 평온한 하루네요.", "저기, 도와주실 수 있을까요?", "그럼요, 제가 도와드릴게요.", "정말 고맙습니다. 큰 힘이 됐어요.", "함께해 주셔서 마음이 따뜻해졌어요.", "이건 작은 보답이에요. 꼭 받아 주세요.", "따뜻한 마음은 꼭 돌아오는 것 같아요."]);
+        DLG_CLASSIC.push(["오늘도 평온한 하루로구나.", "나으리, 도와주실 수 있으신지요?", "그럼요, 내가 도와드리리다.", "참으로 고맙습니다. 큰 은혜를 입었소이다.", "함께해 주시니 마음이 따뜻해지는구려.", "이것은 작은 보답이오. 부디 받아 주시오.", "베푼 마음은 언젠가 돌아오는 법이오."]);
+        // ===== /인물 대사 모드 =====
+        // ===== 전체 카테고리 스토리 엔진 =====
+        const MODS = ["의 충격적인 반전 비밀","속에 숨겨진 짜릿한 복수","와 함께 찾아온 통쾌한 사이다","의 아련하고 극적인 순간","이 전하는 소름 돋는 진실","에서 벌어진 살벌한 대결","의 포근하고 다정한 이야기","속의 그리운 기억 조각","의 맑고 푸른 품 안에서","이 들려주는 잔잔한 메아리","와 함께 물들어가는 노을","의 깊고 그윽한 향기","속에 스며드는 다정한 온기","이 머무는 고요한 돌담길","와 나누는 따스한 미소","의 맑고 순수한 숨결","속에 피어나는 아득한 그리움","이 포근히 감싸 안는 시간","와 함께 흘러가는 세월","의 깊은 울림과 여운"];
+        const CLASSICAL_CATS = ['yadam', 'mindam', 'seolhwa'];
+        function isStoryCat() { return true; }
+        function isOtherCat() { return currentCategory !== 'cheolguk' && currentCategory !== 'senior'; }
+        function isClassicTopic(topic) { return CHEOLGUK_CLASSIC_SET.has(topic) || CLASSICAL_CATS.includes(currentCategory); }
+        function splitBM(topic) {
+            const b = topic.replace(/\s*\[\d+\]$/, '');
+            for (const m of MODS) if (b.endsWith(' ' + m)) return { base: b.slice(0, -m.length - 1), mod: m };
+            return { base: b, mod: '' };
+        }
+        function shortTopic(topic) { return isOtherCat() ? splitBM(topic).base : topic; }
+        function arcFor(topic) {
+            const { base, mod } = splitBM(topic);
+            if (currentCategory === 'daily' || currentCategory === 'fairytale') return 5;
+            const revenge = /복수|사이다|대결/.test(mod), twist = /반전|진실/.test(mod);
+            if (currentCategory !== 'drama' && !revenge && !twist) return 5;
+            if (/증거|폭로|외도|녹음|기록|장부|편지|사진|추적|찾아낸/.test(base)) return 1;
+            if (/망신|소문|동창들|왕따|공개|역관광|웃음거리/.test(base)) return 2;
+            if (/재산|상속|해고|계약|땅|채무|빚|사채|문서|이혼|소송|재개발/.test(base)) return 3;
+            if (/정체|숨|위장|변신|회장|대표|건물주|재벌|암행|비서|방랑|선비|떠돌|재치/.test(base)) return 0;
+            let h = 0; for (let i = 0; i < base.length; i++) h = (h * 31 + base.charCodeAt(i)) % 100000;
+            return h % 2 ? 0 : 4;
+        }
+        const CAST_P_CLASSIC = [
+            [/선비|방랑|떠돌/, "wandering Korean scholar in worn white hanbok and a straw hat, calm clever eyes"], [/나무꾼/, "poor honest Korean woodcutter in patched hanbok"],
+            [/스님|승려/, "gentle Korean Buddhist monk in gray robes"], [/효자|효심|총각/, "honest young Korean man in simple hanbok"],
+            [/며느리|아낙|효부|각시|처녀/, "kind young Korean woman in simple hanbok"], [/할머니|노파/, "kind elderly Korean grandmother in hanbok"],
+            [/할아버지|노인|영감님/, "kind elderly Korean grandfather in hanbok"], [/장사꾼|상인/, "Korean peddler with a bundle on his back"],
+            [/훈장|서당/, "old Korean schoolmaster in hanbok"], [/아이|소년|소녀|남매/, "two young Korean children in hanbok"]];
+        const CAST_A_CLASSIC = [[/부자|영감|양반|탐관|사또|관리|지주|원님|욕심/, "greedy arrogant Korean nobleman in silk hanbok and a horsehair hat"], [/도깨비/, "mischievous Korean goblin (dokkaebi)"]];
+        const PLACE_CLASSIC = [[/주막/, "a Joseon-era roadside tavern"], [/장터|시장/, "a busy Joseon market"], [/관아|사또|고을|원님/, "a Joseon county government yard"], [/절|사찰|스님/, "a mountain Buddhist temple"], [/산|숲|골짜기/, "a Joseon mountain village path"], [/양반|가문|마당|대감/, "a yangban house courtyard"], [/서당/, "a Joseon village school"], [/바다|어촌|포구/, "a Joseon fishing village"]];
+        const CAST_P_MODERN = [[/할머니/, "kind elderly Korean grandmother, ~75, gray permed hair, purple cardigan"], [/알바생/, "young Korean part-time worker in an apron"], [/아내|며느리|엄마|딸/, "calm Korean woman, 30s, plain clothes, quiet strength"], [/남편|남자|사나이|사위|아들|개발자/, "calm Korean man, 30s, simple suit"], [/회장|대표/, "Korean executive disguised in plain clothes"]];
+        const CAST_A_MODERN = [[/시부모|시집|시댁/, "arrogant Korean in-laws, a couple in their 60s, formal clothes"], [/사위/, "arrogant Korean man, 30s, flashy suit"], [/본부장|상사|팀장/, "arrogant Korean executive, 50s, dark suit"], [/동창/, "snobbish Korean classmate, 30s, designer clothes"], [/사채업자|빚/, "intimidating Korean loan shark, 40s, black jacket"], [/남편/, "arrogant Korean husband, 40s, suit"], [/손님/, "rude Korean customer, 50s, loud jacket"]];
+        function deriveOtherCard(topic) {
+            const base = splitBM(topic).base, classic = CLASSICAL_CATS.includes(currentCategory);
+            const pick = (rules, d) => { for (const r of rules) if (r[0].test(base)) return r[1]; return d; };
+            let P, A, SET;
+            if (classic) {
+                P = pick(CAST_P_CLASSIC, "kind clever Korean villager in clean simple hanbok");
+                A = pick(CAST_A_CLASSIC, "greedy arrogant Korean nobleman in silk hanbok and a horsehair hat");
+                SET = pick(PLACE_CLASSIC, "a Joseon-era village hanok courtyard");
+            } else {
+                P = pick(CAST_P_MODERN, "calm Korean woman, 30s, black bob hair, white blouse, gray coat");
+                A = pick(CAST_A_MODERN, "arrogant Korean man, 50s, slicked hair, flashy dark jacket");
+                SET = firstRule(PLACE_RULES, base) || "an everyday Korean location fitting the story";
+            }
+            let T = firstRule(TWIST_RULES, base.slice(-16));
+            if (!T && classic && /정체|암행|어사|방랑|선비|떠돌|변장|숨/.test(base)) T = "the disguised hero's true identity and proof of the offender's crimes";
+            return { P, A, S: classic ? "a few villagers in hanbok" : "two or three bystanders in everyday clothes", SET, T };
+        }
+        // ===== /전체 카테고리 스토리 엔진 =====
+        // ===== /추가 기능 모음 =====
+
+        function pickCheolgukType(topic) {
+            if (cheolgukType !== 'auto') return Number(cheolgukType);
+            if (CHEOLGUK_TYPE_MAP[topic] !== undefined) return CHEOLGUK_TYPE_MAP[topic];
+            if (isOtherCat()) return arcFor(topic);
+            let h = 0;
+            for (let i = 0; i < topic.length; i++) h = (h * 31 + topic.charCodeAt(i)) % 100000;
+            return h % CHEOLGUK_TOP5.length;
+        }
+
+        function getCheolgukStory(index, total, topic) {
+            const t = (isClassicTopic(topic) ? CHEOLGUK_CLASSIC : CHEOLGUK_TOP5)[pickCheolgukType(topic)];
+            const tt = shortTopic(topic);
+            if (index === total) {
+                return { character: t.end.c, action: t.end.a, narration: t.end.n(tt) };
+            }
+            const L = t.beats.length, n = total - 1;
+            const pos = Math.floor((index - 1) * L / n);
+            const first = Math.floor((pos * n + L - 1) / L);
+            const k = (index - 1) - first;
+            const b = t.beats[pos];
+            const narration = (k > 0 ? CHEOLGUK_CONNECT[(k - 1) % CHEOLGUK_CONNECT.length] + " " : "") + b.n(tt);
+            const action = b.a + (k > 0 ? ", " + CHEOLGUK_SHOT[(k - 1) % CHEOLGUK_SHOT.length] : "");
+            return { character: b.c, action, narration };
+        }
+
+        function setCheolgukType(v) {
+            cheolgukType = v;
+            renderCheolgukTypeButtons();
+            if (currentTopicTitle) updateInterface();
+        }
+
+        function renderCheolgukTypeButtons() {
+            const box = document.getElementById('cheolgukTypeButtons');
+            if (!box) return;
+            box.innerHTML = '';
+            const items = [{ v: 'auto', label: '🎲 자동(주제별 배정)' }].concat(CHEOLGUK_TOP5.map((x, i) => ({ v: String(i), label: x.name })));
+            items.forEach(it => {
+                const b = document.createElement('button');
+                const on = String(cheolgukType) === it.v;
+                b.className = on
+                    ? "px-3 py-2 rounded-2xl bg-amber-700 text-white font-black text-xs shadow-md border-2 border-amber-300"
+                    : "px-3 py-2 rounded-2xl bg-white hover:bg-amber-100 text-amber-950 font-black text-xs border-2 border-amber-400 shadow-sm";
+                b.innerText = it.label;
+                b.onclick = () => setCheolgukType(it.v);
+                box.appendChild(b);
+            });
+        }
+        renderCheolgukTypeButtons();
+        // ===== /참교육 인기 스토리 TOP5 =====
+
+        const dramaBase = [
+            "무시하던 시부모 앞에서의 통쾌한 자산가 변신", "재벌가 아내로 숨어살다 정체를 드러낸 아내", "동창회에서 가난하다고 무시당한 남자의 초대박 반전", "남편의 외도를 완벽하게 증거로 잡아낸 지옥의 복수",
+            "해고당한 직장에 대표로 당당하게 걸어 들어간 순간", "사채업자에게 시달리다 건물주로 나타난 억척스러운 엄마", "왕따시키던 동창들에게 갚아준 수십 배의 복수극", "며느리를 구박하던 시집의 모든 재산을 가로챈 사연",
+            "가난한 시골 친정을 무시하다 호되게 혼난 오만한 사위", "비서로 위장 잠입하여 회사를 뒤흔든 진짜 대기업 회장", "결혼식장에서 터진 신랑의 충격적인 이중생활 폭로", "교통사고로 기억을 잃은 척 숨겨진 음모를 밝히는 사나이",
+            "유산 상속에서 완벽하게 배제당했다가 극적으로 역전한 사연", "사원들을 괴롭히던 안하무인 본부장의 처절한 해고 통보", "단골 카페 알바생을 무시하던 진상 손님의 대참사", "가짜 명품을 걸쳤다며 망신 주려다 역관광당한 동창",
+            "이혼 요구하던 남편이 망한 뒤 무릎 꿇고 빌어온 사연", "수백억 빚을 떠안기고 도망간 전 남편을 찾아낸 복수", "보육원 출신이라고 무시당하던 천재 개발자의 대성공", "시골 할머니의 낡은 땅이 재개발 되며 벌어진 가족 소동"
+        ];
+
+        const cheolgukBase = [
+            "식당에서 난동 피우는 진상 손님을 꼼짝 못 하게 참교육", "갑질하는 백화점 상무에게 정석으로 팩폭 날린 사연", "도로 위 보복 운전자에게 완벽하게 블랙박스 참교육", "후배에게 쓰레기 같은 업무 떠넘기다 잘린 꼰대 상사",
+            "주차 자리를 뻔뻔하게 두 칸 차지한 무개념 차주 응징", "알바생에게 반말하며 갑질하던 아줌마의 참혹한 최후", "택배 기사에게 함부로 대하다 망신당한 아파트 입주민", "지하철 노약자석 무법자를 단숨에 제압한 청년의 사이다",
+            "상가 임대료를 두 배로 올려달라던 악덕 건물주의 몰락", "학부모 갑질로 교사를 괴롭히던 악질 학부모의 철퇴", "동물 학대하던 몰지각한 사람에게 가해진 인과응보", "새치기 하며 오히려 큰소리치던 아저씨의 대망신",
+            "쓰레기를 무단 투기하다 현장에서 딱 걸려 쇠고랑 찬 범인", "알바 급여를 떼어먹으려다 방송에 박제된 악덕 업주", "장애인 주차구역에 상습 주차하다 거액 벌금 맞은 차주", "인플루언서라며 협찬 요구하고 갑질하다 계정 폭파된 사건",
+            "편의점 야간 알바를 무시하며 행패 부리던 불량배 응징", "독점 계약으로 갑질하던 하청업체 파괴한 대기업 상무", "층간소음 유발하고 오히려 적반하장으로 나오던 이웃 참교육", "반려견 목줄 안 하고 위협하다 호되게 혼난 무개념 견주"
+        ];
+
+        const dailyBase = [
+            "빛바란 사진첩 속 아련한 풍경과 미소", "찻잔 위로 피어오르는 따스한 온기와 여유", "비 내리는 창가에서 듣는 풀벌레의 고요한 노래",
+            "초가집 토담 밑에 수줍게 피어난 하얀 민들레", "시골 고향 집 마당을 묵묵히 지키던 커다란 감나무", "마을 어귀 느티나무 아래 정겨운 평상 풍경",
+            "이른 아침 장독대에 고요히 고인 맑고 투명한 이슬", "가을녘 황금빛으로 풍성하게 물든 들판의 평화로움", "눈 내린 겨울밤의 고요하고 아늑한 산촌 가옥",
+            "봄바람에 실려 온 은은하고 향기로운 매화 꽃내음", "푸른 바닷가 작은 포구의 고요하고 평화로운 오후", "달빛 아래 조용히 잠든 옛 고향의 정겨운 밤풍경"
+        ];
+
+        const yadamBase = [
+            "어느 깊은 산골 주막의 화로가에서 나누던 하룻밤 이야기", "팔도를 떠돌며 지혜를 나누던 방랑 선비의 재치", "옛 양반 가문의 마당 깊은 곳에 숨겨진 보물상자 비밀",
+            "한양 북촌 기와집 담장 너머로 흘러나온 다정한 소문", "시골 장터 주막에서 벌어진 유쾌한 장사꾼의 사람 냄새 소동", "깊은 밤 험한 산길을 지나던 나그네의 신비로운 도깨비 소동"
+        ];
+
+        const mindamBase = [
+            "은혜를 잊지 않고 보답하기 위해 찾아온 의로운 호랑이", "욕심 많은 부자 영감과 마음 착한 나무꾼의 곶감 소동", "깊은 산속 도깨비와 정직하게 맞대결을 펼친 순박한 총각",
+            "지혜로운 두꺼비의 슬기로 가뭄 속에서 해를 구한 동물 마을", "재치 있는 토끼의 기지로 위기를 재치 있게 넘긴 호랑이의 오해", "깊은 우물 속에 비친 둥근 달님을 건져 올리려던 어리숙한 호랑이"
+        ];
+
+        const fairytaleBase = [
+            "따스한 햇살 가득한 초원에 노랗게 피어난 민들레 요정", "하얀 구름 위를 둥실둥실 떠다니는 노란 종이비행기의 꿈", "밤하늘 둥근 달님에게 간절한 편지를 띄우는 아기 곰의 하루",
+            "무지개 다리를 건너 푸른 바다를 여행하는 빛나는 물고기", "시간을 초록색 자전거로 힘차게 달리는 소년의 싱그러운 바람", "반짝이는 별빛이 이불처럼 덮여 있는 밤하늘의 아기 고양이"
+        ];
+
+        const seolhwaBase = [
+            "천년의 기나긴 세월 동안 묵묵히 바위가 된 지극한 효심", "백두산 천지의 푸르고 깊은 물결에 깃든 장엄한 전설", "제주도 한라산의 거대한 기운을 품은 영험한 오백장군 이야기",
+            "금강산 일만오천 봉우리의 첩첩산중에 얽힌 신비로운 비경", "푸른 동해 바다 용왕의 딸과 순박한 어부의 애틋한 사랑", "경주 첨성대 밤하늘 별빛 아래 숨겨진 고요한 우주의 비밀"
+        ];
+
+        function generate200(baseArr) {
+            let res = [];
+            const modifiers = [
+                "의 충격적인 반전 비밀", "속에 숨겨진 짜릿한 복수", "와 함께 찾아온 통쾌한 사이다", "의 아련하고 극적인 순간",
+                "이 전하는 소름 돋는 진실", "에서 벌어진 살벌한 대결", "의 포근하고 다정한 이야기", "속의 그리운 기억 조각",
+                "의 맑고 푸른 품 안에서", "이 들려주는 잔잔한 메아리", "와 함께 물들어가는 노을", "의 깊고 그윽한 향기",
+                "속에 스며드는 다정한 온기", "이 머무는 고요한 돌담길", "와 나누는 따스한 미소", "의 맑고 순수한 숨결",
+                "속에 피어나는 아득한 그리움", "이 포근히 감싸 안는 시간", "와 함께 흘러가는 세월", "의 깊은 울림과 여운"
+            ];
+            for (let i = 0; i < 200; i++) {
+                let base = baseArr[i % baseArr.length];
+                let mod = modifiers[i % modifiers.length];
+                res.push(`${base} ${mod} [${i + 1}]`);
+            }
+            return res;
+        }
+
+        const categoriesData = {
+            drama: { name: "쇼츠 인기 드라마 200선", items: generate200(dramaBase) },
+            cheolguk: { name: "참교육 & 사이다 200선", items: CHEOLGUK_ITEMS },
+            daily: { name: "감성·일상 순수 창작 200선", items: generate200(dailyBase) },
+            yadam: { name: "야담 순수 창작 200선", items: generate200(yadamBase) },
+            mindam: { name: "민담 순수 창작 200선", items: generate200(mindamBase) },
+            fairytale: { name: "동화 순수 창작 200선", items: generate200(fairytaleBase) },
+            seolhwa: { name: "설화 순수 창작 200선", items: generate200(seolhwaBase) },
+            senior: { name: "시니어 키오스크·디지털 사이다 200선", items: SENIOR_ITEMS }
+        };
+
+        window.addEventListener('DOMContentLoaded', () => {
+            renderSceneCountButtons();
+            truePerfectReset();
+        });
+
+        function renderSceneCountButtons() {
+            const container = document.getElementById('sceneCountButtonsContainer');
+            if(!container) return;
+            container.innerHTML = '';
+            [5, 7, 10, 15, 20, 25, 30].forEach(count => {
+                const btn = document.createElement('button');
+                btn.id = `btn-scene-${count}`;
+                btn.onclick = () => setScenes(count);
+                btn.className = count === currentScenesCount 
+                    ? "px-3.5 py-2 rounded-2xl bg-blue-600 text-white font-black transition shadow-md text-xs sm:text-sm" 
+                    : "px-3.5 py-2 rounded-2xl bg-white hover:bg-blue-100 text-blue-900 font-black border-2 border-blue-300 transition text-xs sm:text-sm shadow-sm";
+                btn.innerText = `${count}장`;
+                container.appendChild(btn);
+            });
+        }
+
+        function switchCategory(catKey) {
+            currentCategory = catKey;
+            ['drama', 'cheolguk', 'daily', 'yadam', 'mindam', 'fairytale', 'seolhwa', 'senior'].forEach(k => {
+                let btn = document.getElementById(`cat-${k}`);
+                if(btn) {
+                    btn.className = k === catKey ? "py-2 px-0.5 rounded-xl bg-blue-600 text-white font-black transition shadow-md text-center border-2 border-blue-400" : "py-2 px-0.5 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-900 font-black transition text-center shadow-sm text-[11px]";
+                }
+            });
+            document.getElementById('categoryTitleLabel').innerText = categoriesData[catKey].name;
+            document.getElementById('activeCategoryBadge').innerText = categoriesData[catKey].name;
+            let ctp = document.getElementById('cheolgukTypePanel');
+            if (ctp) ctp.classList.toggle('hidden', false);
+            document.getElementById('totalCountLabel').innerText = '총 ' + categoriesData[catKey].items.length + '선';
+            renderTopicList();
+        }
+
+        function renderTopicList() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const container = document.getElementById('topicListContainer');
+            container.innerHTML = '';
+            let entries;
+            if (listMode === 'fav') entries = lsGet('shortsFav', []);
+            else if (listMode === 'recent') entries = lsGet('shortsRecent', []);
+            else entries = categoriesData[currentCategory].items.map(t => ({ cat: currentCategory, title: t }));
+            const favs = lsGet('shortsFav', []);
+            let shown = 0;
+            entries.forEach(e => {
+                const title = e.title.replace(/\s*\[\d+\]$/, '');
+                if (!title.toLowerCase().includes(query)) return;
+                const paletteClass = colorfulBgPalettes[shown % colorfulBgPalettes.length];
+                const row = document.createElement('div');
+                row.className = 'flex gap-1.5 items-stretch';
+                const btn = document.createElement('button');
+                btn.className = `flex-1 text-left p-3.5 rounded-2xl border-3 transition font-black text-sm sm:text-base shadow-sm hover:scale-[1.01] ${paletteClass}`;
+                const catName = (categoriesData[e.cat] ? categoriesData[e.cat].name : '').split(' ')[0];
+                btn.innerText = `${shown + 1}. ${listMode === 'cat' ? '' : '[' + catName + '] '}${title}`;
+                btn.onclick = () => pickEntry(e);
+                const isFav = favs.some(f => f.cat === e.cat && f.title === e.title);
+                const star = document.createElement('button');
+                star.className = 'px-3 rounded-2xl bg-white border-2 border-amber-400 text-xl shadow-sm';
+                star.innerText = isFav ? '★' : '☆';
+                star.onclick = () => toggleFav(e.cat, e.title);
+                row.appendChild(btn); row.appendChild(star);
+                container.appendChild(row);
+                shown++;
+            });
+            if (!shown) container.innerHTML = '<div class="p-3 text-sm font-black text-slate-600">표시할 주제가 없습니다.</div>';
+        }
+
+        function filterTopics() { renderTopicList(); }
+
+        function selectTopic(title) {
+            currentTopicTitle = title.replace(/\s*\[\d+\]$/, '').replace(/^\d+\.\s*/, '');
+            document.getElementById('activeTitle').innerText = currentTopicTitle;
+            document.getElementById('customTopicInput').value = currentTopicTitle;
+            fillCast();
+            pushRecent();
+            updateInterface();
+        }
+
+        function generateCustomStory() {
+            let val = document.getElementById('customTopicInput').value.trim();
+            if(!val) { alert('주제를 입력해주세요!'); return; }
+            currentTopicTitle = val;
+            document.getElementById('activeTitle').innerText = val;
+            fillCast();
+            updateInterface();
+            alert('✨ 나만의 주제가 적용되었습니다!');
+        }
+
+        function setScenes(count) {
+            currentScenesCount = count;
+            copiedIdx = new Set();
+            renderSceneCountButtons();
+            if(currentTopicTitle) {
+                updateInterface();
+            }
+        }
+
+        function setBgm(bgmName) {
+            currentBgm = bgmName;
+            ['긴장감 넘치는 스릴러풍', '통쾌한 사이다 리듬', '구슬픈 통기타 선율', '따스한 감성 발라드'].forEach((name, idx) => {
+                let b = document.getElementById(`bgm-${idx+1}`);
+                if(b) {
+                    b.className = name === bgmName ? "p-3 rounded-2xl bg-pink-700 text-white transition text-center shadow-md font-black border-2 border-pink-300" : "p-3 rounded-2xl bg-pink-100 hover:bg-pink-200 text-pink-950 border-2 border-pink-300 transition text-center shadow-sm font-black";
+                }
+            });
+            if(currentTopicTitle) updateInterface();
+        }
+
+        function toggleHighContrast() {
+            isHighContrast = !isHighContrast;
+            let body = document.getElementById('mainBody');
+            let btn = document.getElementById('btnThemeToggle');
+            let cards = document.querySelectorAll('.card-box');
+
+            if(isHighContrast) {
+                body.className = "bg-black min-h-screen text-yellow-300 flex flex-col transition-colors duration-300";
+                btn.className = "bg-yellow-400 hover:bg-yellow-500 text-black px-3.5 py-2.5 rounded-2xl transition shadow-lg font-black text-xs flex items-center gap-1 border-2 border-black";
+                btn.innerText = "🌙 기본 모드";
+                cards.forEach(c => {
+                    c.style.backgroundColor = "#111827";
+                    c.style.borderColor = "#FACC15";
+                    c.style.color = "#FEF08A";
+                });
+            } else {
+                body.className = "bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 min-h-screen text-slate-900 flex flex-col transition-colors duration-300";
+                btn.className = "bg-amber-400 hover:bg-amber-500 text-slate-950 px-3.5 py-2.5 rounded-2xl transition shadow-lg font-black text-xs flex items-center gap-1 border-2 border-white";
+                btn.innerText = "☀️ 고대비 모드";
+                cards.forEach(c => {
+                    c.style.backgroundColor = "";
+                    c.style.borderColor = "";
+                    c.style.color = "";
+                });
+            }
+        }
+
+        function updateInterface() {
+            if(!currentTopicTitle) return;
+
+            let btnContainer = document.getElementById('sequentialButtonsContainer');
+            btnContainer.innerHTML = `
+                <span class="text-xs sm:text-sm font-black text-indigo-950 w-full mb-2">🔥 [원터치 프롬프트 복사] 아래 버튼을 누르면 각 씬별 고유 서사 프롬프트가 복사됩니다:</span>
+            `;
+            renderCopyToolbar(btnContainer);
+
+            // 1. 표지 종합 복사 버튼
+            let coverBtn = document.createElement('button');
+            coverBtn.className = "w-full bg-gradient-to-r from-amber-600 to-orange-700 hover:from-amber-700 hover:to-orange-800 text-white text-sm sm:text-base font-black py-4 px-5 rounded-3xl shadow-xl transition text-center mb-3.5 flex flex-col items-center justify-center gap-1 border-3 border-amber-200";
+            coverBtn.innerHTML = `
+                <span>${copiedIdx.has(0) ? '✅ ' : ''}🎬 [표지] 왕대비 타이틀 자막 영문 프롬프트 복사 (한국인 전용)${lenTag(buildCoverPrompt())}</span>
+                <span class="text-white text-xs sm:text-sm font-black bg-black/40 px-4 py-1.5 rounded-2xl w-full text-center">"${currentTopicTitle}"</span>
+            `;
+            coverBtn.onclick = () => {
+                let text = buildCoverPrompt();
+                copyTextDirect(text, '표지 프롬프트(한국인 전용)가 복사되었습니다!');
+                markCopied(0);
+            };
+            btnContainer.appendChild(coverBtn);
+
+            // 2. 다른 씬들 버튼 (고유 나레이션 분산 적용)
+            for(let i=1; i<=currentScenesCount; i++) {
+                let story = getUniqueDistributedStep(currentCategory, i, currentScenesCount, currentTopicTitle);
+                
+                let scenePromptText = buildScenePrompt(i, currentScenesCount, story);
+
+                let isEnding = (i === currentScenesCount);
+                let btnBgClass = isEnding 
+                    ? "w-full bg-gradient-to-r from-rose-700 to-pink-700 hover:from-rose-800 hover:to-pink-800 text-white text-sm sm:text-base font-black py-4 px-5 rounded-3xl shadow-xl transition text-center mb-3.5 flex flex-col items-center justify-center gap-1 border-3 border-amber-300" 
+                    : "w-full bg-gradient-to-r from-indigo-700 to-violet-700 hover:from-indigo-800 hover:to-violet-800 text-white text-sm sm:text-base font-black py-4 px-5 rounded-3xl shadow-xl transition text-center mb-3.5 flex flex-col items-center justify-center gap-1 border-3 border-indigo-300";
+                
+                let btnTitle = isEnding ? `🎬 [${i}번 씬 - ★ 사이다 결말] 영문 프롬프트 복사${lenTag(scenePromptText)}` : `🎬 [${i}번 씬] 고유 서사 영상 프롬프트 복사${lenTag(scenePromptText)}`;
+
+                let b = document.createElement('button');
+                if (copiedIdx.has(i)) btnTitle = '✅ ' + btnTitle;
+                b.className = btnBgClass;
+                b.innerHTML = `
+                    <span>${btnTitle}</span>
+                    <span class="${isEnding ? 'text-amber-200 bg-black/50' : 'text-indigo-100 bg-black/40'} text-xs sm:text-sm font-black px-4 py-1.5 rounded-2xl w-full text-center truncate">${subLine(i)}</span>
+                `;
+                
+                b.onclick = (function(promptText, idx) {
+                    return function() {
+                        copyTextDirect(promptText, '한국인 배우 중심의 고유 서사 프롬프트가 복사되었습니다!');
+                        markCopied(idx);
+                    };
+                })(scenePromptText, i);
+
+                btnContainer.appendChild(b);
+            }
+
+            // 하단 상세 미리보기 카드 영역
+            let details = document.getElementById('sceneDetailsContainer');
+            details.innerHTML = '<div class="text-xs font-black text-indigo-950 mb-2">📋 아래는 각 씬별 고유 나레이션과 한국인 배우 연출 프롬프트 미리보기입니다:</div>';
+
+            // 표지 미리보기 카드
+            let coverDiv = document.createElement('div');
+            coverDiv.className = "border-4 border-amber-500 bg-amber-50 rounded-3xl p-5 sm:p-6 shadow-xl space-y-4 card-box";
+            coverDiv.innerHTML = `
+                <div class="flex justify-between items-center border-b-2 pb-3 border-amber-300">
+                    <span class="text-base sm:text-lg font-black text-amber-950">🖼️ [표지] 왕대비 타이틀 자막 및 한국인 연출</span>
+                </div>
+                <div>
+                    <span class="text-xs font-black text-amber-950 block mb-1.5">🔤 [유튜브 앱 '텍스트' - 메인 주제 왕대비 자막]</span>
+                    <div class="p-5 bg-white border-4 border-amber-500 rounded-2xl text-3xl sm:text-5xl font-black text-slate-950 shadow-inner text-center tracking-tight mb-3">
+                        ${currentTopicTitle}
+                    </div>
+                    <div class="text-xs font-black text-amber-950 bg-amber-200 p-4 rounded-2xl space-y-1 shadow-sm border border-amber-400">
+                        <span class="font-black text-amber-950 text-sm">🗣️ [음성 나레이션 녹음 대본]:</span>
+                        <p class="text-sm sm:text-base font-black text-slate-950">모두를 경악게 한 그 이야기, "${currentTopicTitle}". 지금 그 서막이 열립니다.</p>
+                    </div>
+                </div>
+            `;
+            details.appendChild(coverDiv);
+
+            // 각 씬 미리보기 카드 반복 생성 (고유 나레이션 반영)
+            for(let i=1; i<=currentScenesCount; i++) {
+                let story = getUniqueDistributedStep(currentCategory, i, currentScenesCount, currentTopicTitle);
+                let isEnding = (i === currentScenesCount);
+                
+                let sceneDiv = document.createElement('div');
+                sceneDiv.className = isEnding ? "border-4 border-rose-500 bg-rose-50 rounded-3xl p-5 sm:p-6 shadow-xl space-y-4 card-box" : "border-4 border-indigo-400 bg-indigo-50 rounded-3xl p-5 sm:p-6 shadow-xl space-y-4 card-box";
+                
+                sceneDiv.innerHTML = `
+                    <div class="flex justify-between items-center border-b-2 pb-3 ${isEnding ? 'border-rose-300' : 'border-indigo-300'}">
+                        <span class="text-base sm:text-lg font-black ${isEnding ? 'text-rose-950' : 'text-indigo-950'}">🎬 [${i}번째 씬${isEnding ? ' - ★ 통쾌한 사이다 결말' : ''}] 고유 서사 연출 씬</span>
+                    </div>
+                    <div>
+                        <span class="text-xs font-black ${isEnding ? 'text-rose-950' : 'text-indigo-950'} block mb-1.5">🚫 [화면 자막 없음 - 한국인 주연 순수 영상 프롬프트]</span>
+                        <div class="text-xs font-black ${isEnding ? 'text-rose-950 bg-rose-200' : 'text-indigo-950 bg-indigo-200'} p-3 rounded-2xl space-y-1 mb-2 shadow-sm border ${isEnding ? 'border-rose-400' : 'border-indigo-300'}">
+                            <p>👤 <b>한국인 등장인물</b>: ${story.character}</p>
+                            <p>🎬 <b>행동 연출</b>: ${story.action}</p>
+                        </div>
+                    </div>
+                    <div class="text-xs font-black ${isEnding ? 'text-rose-950 bg-rose-200' : 'text-indigo-950 bg-indigo-200'} p-4 rounded-2xl space-y-1 shadow-sm border ${isEnding ? 'border-rose-400' : 'border-indigo-300'}">
+                        <span class="font-black ${isEnding ? 'text-rose-950' : 'text-indigo-950'} text-sm">🗣️ [${voMode === 'dialogue' ? '인물 대사 (영상 속 인물이 말함)' : '음성 나레이션 녹음 대본'}]:</span>
+                        <p class="text-sm sm:text-base font-black text-slate-950">${voMode === 'dialogue' ? subLine(i) : story.narration}</p>
+                    </div>
+                `;
+                details.appendChild(sceneDiv);
+            }
+            renderUploadSet();
+        }
+
+        function copyTextDirect(text, alertMsg) {
+            if(navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(() => {
+                    alert('📋 ' + alertMsg);
+                }).catch(() => fallbackCopy(text, alertMsg));
+            } else {
+                fallbackCopy(text, alertMsg);
+            }
+        }
+
+        function fallbackCopy(text, alertMsg) {
+            let ta = document.createElement("textarea");
+            ta.value = text;
+            ta.style.position = "fixed";
+            document.body.appendChild(ta);
+            ta.focus();
+            ta.select();
+            try {
+                document.execCommand('copy');
+                alert('📋 ' + alertMsg);
+            } catch(e) {
+                alert('복사에 실패했습니다. 길게 눌러 복사해주세요.');
+            }
+            document.body.removeChild(ta);
+        }
+
+        function truePerfectReset() {
+            if (confirm('모든 내용을 초기화하고 처음부터 다시 시작하시겠습니까?')) {
+                document.getElementById('customTopicInput').value = '';
+                document.getElementById('searchInput').value = '';
+                
+                currentTopicTitle = '';
+                currentScenesCount = 7;
+                renderSceneCountButtons();
+                currentCategory = 'drama';
+                currentBgm = '긴장감 넘치는 스릴러풍';
+                
+                document.getElementById('sequentialButtonsContainer').innerHTML = '<span class="text-xs sm:text-sm font-black text-slate-700 w-full mb-2">🔥 [원터치 프롬프트 복사] 아래 표지 및 씬별 버튼을 확인하고 눌러보세요:</span>';
+                
+                document.getElementById('sceneDetailsContainer').innerHTML = `
+                    <div class="border-3 border-dashed border-indigo-400 bg-indigo-50 rounded-3xl p-10 text-center text-indigo-950 font-black text-base shadow-inner">
+                        📌 위 가이드 순서대로 왼쪽에서 주제를 선택하고 [나만의 주제 적용하기]를 누르면 고유 서사 복사 버튼들이 나타납니다.
+                    </div>
+                `;
+                
+                cheolgukType = 'auto';
+                copiedIdx = new Set(); sodaLevel = 'normal'; renderSodaButtons(); listMode = 'cat'; updateListModeButtons();
+                document.getElementById('uploadSetContainer').innerHTML = '';
+                renderCheolgukTypeButtons();
+                switchCategory('drama');
+                setBgm('긴장감 넘치는 스릴러풍');
+                
+                if(isHighContrast) toggleHighContrast();
+                
+                alert('모든 입력창과 항목이 깨끗하게 초기화되었습니다.');
+            }
+        }
+        renderQuickCast(); renderSodaButtons(); refreshSavedSelect(); updateListModeButtons();
+    </script>
+</body>
+</html>
